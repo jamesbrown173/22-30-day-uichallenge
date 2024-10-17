@@ -1,0 +1,90 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: blue 1px solid; */
+}
+
+/* Base Styles */
+html,
+body {
+  height: 100%;
+  font-family: "Arial", sans-serif;
+  line-height: 1.5;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+
+  color: white;
+}
+
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav__itemsLeft {
+  display: flex;
+  color: #b79d98;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav__itemsRight {
+  display: flex;
+  color: #ebccc6;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav__redCircle {
+  background-color: #f64353;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+}
+.nav__yellowCircle {
+  background-color: #ffeb00;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+}
+
+.nav__circleContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__lowerText {
+}
