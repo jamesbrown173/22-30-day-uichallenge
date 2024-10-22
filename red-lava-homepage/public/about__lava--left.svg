@@ -1,14 +1,22 @@
-<svg width="209" height="439" viewBox="0 0 209 439" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_1_7)">
-<path d="M0.203483 13.0209L-1 12.7708V14V433.5V434.369L-0.139644 434.49C39.0144 440.012 84.0967 435.267 118.584 406.013C153.092 376.741 176.755 323.135 173.499 231.465C168.278 84.4492 55.8156 24.5789 0.203483 13.0209Z" fill="url(#paint0_radial_1_7)" stroke="white" stroke-width="2"/>
+<svg width="353" height="600" viewBox="0 0 353 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_10_3)">
+<path d="M-3.79712 18.0208L-5 17.7716V19V568.383V569.253L-4.13922 569.373C47.2472 576.598 106.365 570.383 151.577 532.15C196.809 493.9 227.883 423.807 223.607 303.806C216.754 111.461 69.1693 33.1387 -3.79712 18.0208Z" fill="url(#paint0_radial_10_3)" stroke="white" stroke-width="2"/>
+<g filter="url(#filter0_f_10_3)">
+<ellipse cx="-15" cy="570.5" rx="260" ry="4.5" fill="#724D0A"/>
+</g>
 </g>
 <defs>
-<radialGradient id="paint0_radial_1_7" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(13 176.5) rotate(-28.5658) scale(153.712 261.888)">
+<filter id="filter0_f_10_3" x="-288" y="553" width="546" height="35" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="6.5" result="effect1_foregroundBlur_10_3"/>
+</filter>
+<radialGradient id="paint0_radial_10_3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(13.0777 231.812) rotate(-28.4915) scale(201.784 343.214)">
 <stop offset="0.1" stop-color="#FE604E"/>
 <stop offset="1" stop-color="#C01521"/>
 </radialGradient>
-<clipPath id="clip0_1_7">
-<rect width="209" height="439" fill="white"/>
+<clipPath id="clip0_10_3">
+<rect width="353" height="600" fill="white"/>
 </clipPath>
 </defs>
 </svg>
