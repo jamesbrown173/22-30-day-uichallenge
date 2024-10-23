@@ -271,8 +271,9 @@ nav {
 }
 
 .footer__Decoration {
+  width: 100%;
   height: 80px;
-  background-color: #edbe04;
+  /* background-color: #edbe04; */
   display: flex;
   justify-content: end;
 }
@@ -285,6 +286,13 @@ nav {
 .footer__Decoration--right {
   width: 50%;
   background-color: #b67b01;
+}
+
+.footer__Decoration img {
+  width: 100%;
+  position: relative;
+  top: -30px;
+  left: -10px;
 }
 
 input {
