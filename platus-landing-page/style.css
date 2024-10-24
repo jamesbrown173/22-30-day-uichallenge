@@ -19,6 +19,7 @@ p {
 }
 
 * {
+  /* border: 1px solid red; */
 }
 
 a {
@@ -182,7 +183,8 @@ h1 {
 .main__paragraph {
   color: white;
   font-weight: 200;
-  width: 450px;
+  max-width: 450px;
+  min-width: 400px;
   text-align: center;
   font-size: 14px;
   margin-top: 21px;
@@ -271,7 +273,7 @@ h1 {
   }
   h1 {
     font-size: 50px;
-    line-height: 60px;
+    line-height: 45px;
   }
 }
 
