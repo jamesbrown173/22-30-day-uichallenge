@@ -20,6 +20,7 @@ body {
   line-height: 1.5;
   background-color: #f0f0f0;
   color: #333;
+  overscroll-behavior-y: none;
 }
 
 h1,
@@ -208,7 +209,6 @@ nav {
   width: 100vw;
   position: relative;
 
-  background-color: blue;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -293,6 +293,21 @@ nav {
   position: relative;
   top: -30px;
   left: -10px;
+}
+
+.footer__decorationContainerLower {
+  /* height: 100px; */
+  width: 100%;
+  position: relative;
+}
+
+.footer__decorationContainerLower img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the image doesn't get distorted */
+  position: relative;
+  top: -30px;
+  right: 8px;
 }
 
 input {
