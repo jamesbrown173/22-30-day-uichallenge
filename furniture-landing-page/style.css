@@ -8,8 +8,25 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  /* overscroll-behavior: 1; */
+}
+
+.widescreen__container {
+  max-width: 1300px;
+  background-color: #fffff2;
+  z-index: 2;
+}
+
 body {
   overflow-x: hidden;
+  overscroll-behavior-y: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
 }
 
 nav {
@@ -18,7 +35,7 @@ nav {
   font-size: 12px;
   letter-spacing: -0.3px;
   /* border: 1px red solid; */
-  padding: 20px 50px;
+  padding: 30px 50px;
   display: flex;
   justify-content: space-between;
 }
@@ -28,7 +45,7 @@ nav span {
 }
 
 .hero {
-  height: 750px;
+  height: fit-content;
   margin: 0px 0px 0px 50px;
   display: flex;
 }
@@ -42,8 +59,9 @@ nav span {
 }
 
 .hero__rightImageContainer > img {
-  width: 60vw;
-  position: absolute;
+  width: 56vw;
+  max-width: 756px;
+  position: relative;
   top: 0%;
   right: 0%;
   z-index: -1;
@@ -52,6 +70,7 @@ nav span {
 .hero__rightImageContainer {
   width: 60%;
   position: relative;
+  overflow: hidden;
 }
 
 .nav__leftItems {
@@ -60,10 +79,8 @@ nav span {
 }
 
 body {
-  background-color: #fffff2;
+  background-color: #c8bf91;
   font-family: "Poppins", sans-serif;
-
-  width: 100vw;
 }
 
 button {
@@ -86,14 +103,13 @@ button {
   gap: 2px;
 }
 
-/* only the first h1 of the hero */
 .hero h1:first-of-type {
-  margin-top: 1%;
+  margin-top: 4%;
 }
 
 .hero h1 {
-  font-size: 40px;
-  line-height: 151%;
+  font-size: 57px;
+  line-height: 122%;
   letter-spacing: -2px;
 }
 
@@ -106,10 +122,14 @@ button {
 
 .hero p {
   color: #716f65;
-  margin: 30px 0px;
+  margin: 10px 0px;
   font-size: 14px;
-  line-height: 31px;
+  line-height: 25px;
   max-width: 80%;
+}
+
+.hero p:first-of-type {
+  margin-top: 20px;
 }
 
 .hero__miscItemsContainer {
@@ -127,6 +147,7 @@ button {
 
 .hero__button {
   background-color: #b88b39;
+  margin-top: 30px;
 
   border-radius: 30px;
   margin-bottom: auto;
@@ -138,11 +159,16 @@ button {
   color: #b88b39;
 }
 
+footer {
+  /*  */
+  /* width: 100vw; */
+}
+
 .footer__container {
   display: flex;
   justify-content: space-between;
   /* border: 1px red solid; */
-  margin: 0px 50px;
+  /* margin: 0px 50px; */
 }
 
 .footer__container div {
@@ -155,17 +181,42 @@ button {
 
 footer p {
   color: #716f65;
-  margin: 30px 0px;
-  font-size: 14px;
-  line-height: 31px;
-  max-width: 70%;
+  margin: 12px 0px;
+  font-size: 13px;
+  line-height: 24px;
+  max-width: 66%;
 }
 
 .footer__headingText {
   margin-top: 10px;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 25px;
+  text-align: left;
+  margin-left: -20px;
 }
 
 .footer h2 {
+}
+
+.footer__image--left,
+.footer__image--right {
+  position: relative;
+}
+
+.footer__image--left img,
+.footer__image--right img {
+  width: 400px;
+  position: absolute;
+  bottom: 0%;
+}
+
+.footer__image--left {
+  left: -2%;
+}
+.footer__image--right {
+  right: -2%;
+}
+
+footer {
+  overflow: hidden;
 }
