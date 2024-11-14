@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased smCustom755:w-[90vw] w-[100vw] max-w-[1440px] relative flex flex-col justify-center items-center`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased smCustom755:w-[90vw] w-[100vw] max-w-[1440px] relative flex flex-col justify-center items-center h-fit`}
       >
         <div className="bg-[url('/map-background.svg')] lg:bg-top-large  sm:bg-top-mid bg-top-small   bg-contain bg-no-repeat w-[90%] h-screen -z-50 absolute " />
         <header className="w-full">

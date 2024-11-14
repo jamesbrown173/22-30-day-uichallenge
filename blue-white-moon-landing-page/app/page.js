@@ -5,7 +5,7 @@ import DarkButton from "@/components/DarkButton";
 
 export default function Home() {
   return (
-    <main className="app flex w-full   flex-col items-center relative justify-end overflow-hidden sm:pt-20 pt-0 sm:pb-0 pb-10 h-fit">
+    <main className="app flex w-full flex-col items-center relative justify-center overflow-hidden  pt-10 sm:pb-0 pb-0 h-fit">
       <BackgroundSemiCircleWithAnimations />
       <div className="flex flex-col justify-center items-center mb-auto overflow-hidden ">
         <img
