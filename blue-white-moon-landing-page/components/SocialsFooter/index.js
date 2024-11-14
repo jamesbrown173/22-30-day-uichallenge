@@ -1,7 +1,6 @@
 import React from "react";
 
-const sharedSvgStyles =
-  "size-8 opacity-60 hover:opacity-100 cursor-pointer mb-4";
+const sharedSvgStyles = "size-8  cursor-pointer mb-4";
 
 const SocialsFooter = () => {
   return (

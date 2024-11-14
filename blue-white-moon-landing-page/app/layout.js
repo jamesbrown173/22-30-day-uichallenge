@@ -21,18 +21,17 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      className="bg-[url('/map-background.svg')] lg:bg-top-large  sm:bg-top-mid bg-top-small   bg-contain bg-no-repeat "
-    >
+    <html lang="en" className="">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased w-[90vw] max-w-[1440px] pt-10`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased smCustom755:w-[90vw] w-[100vw] max-w-[1440px] relative flex flex-col justify-center items-center`}
       >
+        <div className="bg-[url('/map-background.svg')] lg:bg-top-large  sm:bg-top-mid bg-top-small   bg-contain bg-no-repeat w-[90%] h-screen -z-50 absolute " />
         <header className="w-full">
           <Navbar />
         </header>
         {children}
-        <footer>
+
+        <footer className="place-self-end">
           <SocialsFooter />
         </footer>
       </body>

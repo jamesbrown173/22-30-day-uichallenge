@@ -2,10 +2,10 @@ import React from "react";
 
 const BackgroundSemiCircleWithAnimations = () => {
   return (
-    <div className="overflow-hidden absolute top-0 ">
+    <div className=" absolute top-0 ">
       {/* Moving Circles */}
       <svg
-        className="size-[1000px] -z-10 spin-slow relative"
+        className="size-[1000px] -z-10 spin-slow relative "
         width="4077"
         height="3837"
         viewBox="0 0 4077 3837"

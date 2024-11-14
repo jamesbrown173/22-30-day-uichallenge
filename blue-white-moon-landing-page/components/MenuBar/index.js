@@ -13,6 +13,7 @@ const MenuBar = () => {
   const [displayMenuDots, setDisplayMenuDots] = useState(false);
   const [mobMenIsActive, setMobMenIsActive] = useState(false);
   const [deskMenIsActive, setDeskMenIsActive] = useState(false);
+  const [loading, setLoading] = useState(true); // New loading state
 
   const menuItems = [
     "Home",
@@ -48,7 +49,7 @@ const MenuBar = () => {
         } else if (parentWidth < 723 && parentWidth >= 623) {
           numOfItemsToReturn = 2;
           shouldDisplayMenuDots = true;
-        } else if (parentWidth < 623 && parentWidth >= 560) {
+        } else if (parentWidth < 623 && parentWidth >= 620) {
           numOfItemsToReturn = 1;
           shouldDisplayMenuDots = true;
         } else {
@@ -60,6 +61,8 @@ const MenuBar = () => {
         setDisplayMenuDots(shouldDisplayMenuDots);
         setVisibleItems(menuItems.slice(0, numOfItemsToReturn));
         setOverflowItems(menuItems.slice(numOfItemsToReturn));
+
+        setLoading(false); // Set loading to false once layout is calculated
       }
     }
 
@@ -69,30 +72,42 @@ const MenuBar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Close dropdowns when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        (mobMenIsActive || deskMenIsActive)
+      ) {
+        setMobMenIsActive(false);
+        setDeskMenIsActive(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [mobMenIsActive, deskMenIsActive]);
+
   return (
     <div
       ref={menuRef}
       className="bg-themeBlue rounded-lg border-borderBlue border-2 h-12 px-6 py-4 text-sm flex justify-center items-center text-nowrap shadow-buttonShadow z-10"
     >
       {/* --- Menu Bar Items Desktop ---  */}
-      <div className="flex w-full gap-4 relative">
-        {visibleItems.map((item) => (
-          <span key={item}>{item}</span>
-        ))}
-        {displayMenuDots ? (
+      <div className="flex w-full gap-4 relative justify-center items-center">
+        {!loading && visibleItems.map((item) => <span key={item}>{item}</span>)}
+        {displayMenuDots && !loading ? (
           <div
-            onMouseEnter={() => {
+            onClick={() => {
               setDeskMenIsActive(!deskMenIsActive);
             }}
           >
-            <img src="more-horiz.svg" />
+            <img className="cursor-pointer min-w-[25px]" src="more-horiz.svg" />
             <div
-              onMouseLeave={() => {
-                setDeskMenIsActive(!deskMenIsActive);
-              }}
               className={
                 deskMenIsActive
-                  ? "rounded-lg   bg-[#3B82F6] border-2 border-[#014DCD] absolute right-[-88px] top-[28px] origin-top-right -z-1 flex justify-start items-start flex-col pl-4 gap-2 text-base p-4 font-light"
+                  ? "rounded-lg bg-[#3B82F6] border-2 border-[#5d6167] absolute right-[-88px] top-[28px] origin-top-right -z-1 flex justify-start items-start flex-col pl-4 gap-2 text-base p-4 font-light"
                   : "hidden"
               }
             >
@@ -100,7 +115,7 @@ const MenuBar = () => {
                 <span className="drop-shadow-xl cursor-pointer" key={item}>
                   {item}
                 </span>
-              ))}{" "}
+              ))}
             </div>
           </div>
         ) : null}
@@ -127,9 +142,8 @@ const MenuBar = () => {
           ))}
 
           {/* --- Right Items --- */}
-          <div className="flex justify-center items-center  flex-row w-full gap-6 mt-auto mb-[30px] pr-[10px]">
+          <div className="flex justify-center items-center flex-row w-full gap-6 mt-auto mb-[30px] pr-[10px]">
             <DarkButton innerText="Sign In" />
-
             <div className={`${sharedButtonStyles}`}>Sign Up</div>
             <img
               src="language-button.svg"

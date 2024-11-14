@@ -23,6 +23,7 @@ module.exports = {
     screens: {
       sm: "576px",
       smCustom: "620px",
+      smCustom755: "755px",
 
       md: "960px",
 
