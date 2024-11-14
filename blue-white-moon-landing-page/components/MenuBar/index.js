@@ -107,7 +107,7 @@ const MenuBar = () => {
             <div
               className={
                 deskMenIsActive
-                  ? "rounded-lg bg-[#3B82F6] border-2 border-[#5d6167] absolute right-[-88px] top-[28px] origin-top-right -z-1 flex justify-start items-start flex-col pl-4 gap-2 text-base p-4 font-light"
+                  ? "rounded-lg bg-[#3B82F6] border-2 border-[#014DCD] absolute right-[-88px] top-[28px] origin-top-right -z-1 flex justify-start items-start flex-col pl-4 gap-2 text-base p-4 font-light"
                   : "hidden"
               }
             >
