@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import BackgroundSemiCircleWithAnimations from "@/components/BackgroundSemiCircleWithAnimations";
 import DarkButton from "@/components/DarkButton";
