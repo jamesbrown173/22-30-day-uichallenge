@@ -12,7 +12,7 @@ export default function Home() {
           src="dollar-lonely.png"
           className="custom-shadow relative h-[400px] w-[400px] top-[112px]"
         />
-        <h1 className="sm:text-5xl text-3xl lg:max-w-[50vw] max-w-[80vw] text-center font-semibold sm:leading-[51px] leading-[30px] tracking-normal text-stroke text-stroke drop-shadow-lg">
+        <h1 className="sm:text-5xl text-3xl max-w-[40rem]  text-center font-semibold sm:leading-[51px] leading-[30px] tracking-normal text-stroke text-stroke drop-shadow-lg">
           Bring Interested Clients & Get Paid As Never Before!
         </h1>
         <p className="font-light lg:max-w-[40vw] sm:max-w-[60vw] text-center  leading-[20px] italic mt-[20px]">

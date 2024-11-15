@@ -44,7 +44,7 @@ const MenuBar = () => {
           numOfItemsToReturn = 4;
           shouldDisplayMenuDots = true;
         } else if (parentWidth < 883 && parentWidth >= 723) {
-          numOfItemsToReturn = 3;
+          numOfItemsToReturn = 2;
           shouldDisplayMenuDots = true;
         } else if (parentWidth < 723 && parentWidth >= 623) {
           numOfItemsToReturn = 2;

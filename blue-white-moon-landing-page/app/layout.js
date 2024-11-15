@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased smCustom755:w-[90vw] w-[100vw] max-w-[1440px] relative flex flex-col justify-center items-center h-fit`}
       >
-        <div className="bg-[url('/map-background.svg')] lg:bg-top-large  sm:bg-top-mid bg-top-small   bg-contain bg-no-repeat w-[90%] h-screen -z-50 absolute " />
+        <div className="bg-[url('/map-background.svg')] lg:bg-top-large  sm:bg-top-mid bg-top-small   bg-contain bg-no-repeat w-[90%] h-[1000px] -z-50 absolute " />
         <header className="w-full">
           <Navbar />
         </header>
