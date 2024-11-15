@@ -88,9 +88,9 @@
             <div class="inputCard__sliderContainerLower">
               <input
                 type="range"
-                min="0"
-                max="100"
-                value="50"
+                min="18"
+                max="65"
+                value="41"
                 id="inputSliderAge"
                 class="inputCard__slider inputCard__slider--age"
               />
@@ -118,9 +118,9 @@
             <div class="inputCard__sliderContainerLower">
               <input
                 type="range"
-                min="0"
-                max="100"
-                value="50"
+                min="10"
+                max="7000"
+                value="3500"
                 id="inputSliderYearlyContributionAmount"
                 class="inputCard__slider inputCard__slider--yearlyContAmount"
               />
@@ -249,7 +249,9 @@
               <span class="inputCard__subText inputCard__subText--resultsCard"
                 >Amount Invested</span
               >
-              <span class="inputCard__headingText">$ 96,280.00</span>
+              <span id="amountInvestedResult" class="inputCard__headingText"
+                >$ 96,280.00</span
+              >
             </div>
             <div class="resultCard__resultInfoContainer">
               <div
@@ -285,7 +287,9 @@
               <span class="inputCard__subText inputCard__subText--resultsCard"
                 >Investment Earnings</span
               >
-              <span class="inputCard__headingText">$ 32,150.00</span>
+              <span id="investmentEarningsResult" class="inputCard__headingText"
+                >$ 32,150.00</span
+              >
             </div>
             <div class="resultCard__resultInfoContainer">
               <div
@@ -321,7 +325,9 @@
               <span class="inputCard__subText inputCard__subText--resultsCard"
                 >Retirement Amount</span
               >
-              <span class="inputCard__headingText">$ 8,640.00</span>
+              <span id="retirementAmountResult" class="inputCard__headingText"
+                >$ 8,640.00</span
+              >
             </div>
           </div>
           <div class="resultsCard__graphContainer">
@@ -339,8 +345,11 @@
                 </span>
               </div>
             </div>
+
             <div class="resultsCard__graphPlaceholder">
-              <span class="inputCard__subText">graph</span>
+              <!-- TODO DELETE -->
+
+              <canvas id="acquisitions"></canvas>
             </div>
           </div>
         </div>
