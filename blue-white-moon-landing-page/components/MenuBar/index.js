@@ -34,22 +34,22 @@ const MenuBar = () => {
         let numOfItemsToReturn;
         let shouldDisplayMenuDots;
 
-        if (parentWidth >= 990) {
+        if (parentWidth >= 1074) {
           numOfItemsToReturn = 6;
           shouldDisplayMenuDots = false;
-        } else if (parentWidth < 990 && parentWidth >= 910) {
+        } else if (parentWidth <= 1074 && parentWidth >= 1023) {
           numOfItemsToReturn = 5;
           shouldDisplayMenuDots = true;
-        } else if (parentWidth < 940 && parentWidth >= 863) {
+        } else if (parentWidth < 1023 && parentWidth >= 940) {
           numOfItemsToReturn = 4;
           shouldDisplayMenuDots = true;
-        } else if (parentWidth < 883 && parentWidth >= 723) {
+        } else if (parentWidth < 940 && parentWidth >= 842) {
+          numOfItemsToReturn = 3;
+          shouldDisplayMenuDots = true;
+        } else if (parentWidth < 842 && parentWidth >= 748) {
           numOfItemsToReturn = 2;
           shouldDisplayMenuDots = true;
-        } else if (parentWidth < 723 && parentWidth >= 623) {
-          numOfItemsToReturn = 2;
-          shouldDisplayMenuDots = true;
-        } else if (parentWidth < 623 && parentWidth >= 620) {
+        } else if (parentWidth < 748 && parentWidth >= 616) {
           numOfItemsToReturn = 1;
           shouldDisplayMenuDots = true;
         } else {
