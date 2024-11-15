@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  font-family: "Inter", serif;
+  background-color: #eff2f6;
+  --dark-card-background-color: #f8fafd;
+  --border-color: #e1e4ea;
+  --primary-font-color: #1d2020;
+  --secondary-font-color: #717784;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* border: 0.1px pink solid; */
+}
+
+html,
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  height: fit-content;
+  width: 100vw;
+  gap: 10px;
+}
+
+.inputCard {
+  background-color: var(--dark-card-background-color);
+  border: var(--border-color) 1px solid;
+  border-radius: 24px;
+
+  width: 534px;
+
+  padding: 30px 20px;
+}
+
+.inputCard__innerContainer {
+  /* border: 0.1px green solid; */
+}
+
+.inputCard__titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px #e2e4e4 solid;
+  padding-bottom: 20px;
+}
+
+.inputCard__itemsLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.inputCard__itemsRight {
+}
+
+.inputCard__headingText {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--primary-font-color);
+}
+.inputCard__svgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputCard__sliderContainer {
+  /* border: 0.1px green solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.inputCard__sliderContainer--withBottomBorder {
+  border-bottom: 0.1px var(--border-color) solid;
+}
+
+.inputCard__sliderContainerUpper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inputCard__sliderContainerLower {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.inputCard__itemsLeft--inSlider {
+  flex-direction: column;
+  align-items: start;
+}
+
+.inputCard__subText {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--secondary-font-color);
+}
+
+.inputCard__number {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--primary-font-color);
+}
+
+.inputCard__slider {
+  position: relative;
+  margin: 20px 0px 15px 0px;
+  width: 100%;
+  height: 8px;
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 20px;
+  border: 1px #e4e6e6 solid;
+  z-index: 0;
+  background-color: #f5f7fa;
+  border-radius: 5px;
+}
+
+.inputCard__slider--age::before {
+  content: "";
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #6897ff 1%, #68c9ff 50%);
+  z-index: -1;
+  clip-path: polygon(
+    0% 0%,
+    var(--age-slider-percentage) 0%,
+    var(--age-slider-percentage) 100%,
+    0% 100%
+  );
+}
+
+.inputCard__slider--yearlyContAmount::before {
+  content: "";
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #6897ff 1%, #68c9ff 50%);
+  z-index: -1;
+  clip-path: polygon(
+    0% 0%,
+    var(--yearly-cont-slider-percentage) 0%,
+    var(--yearly-cont-slider-percentage) 100%,
+    0% 100%
+  );
+}
+
+.inputCard__slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  background: #ffffff;
+  cursor: pointer;
+  border: 1px solid #e2e4e4;
+  z-index: 9;
+}
+
+.slider::-moz-range-thumb {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  background: #ffffff;
+  cursor: pointer;
+  border: 1px solid #e2e4e4;
+}
+
+.inputCard__sliderLabelsContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.inputCard__sliderLabel {
+  font-size: 12px;
+  color: var(--secondary-font-color);
+  padding-bottom: 20px;
+}
+
+.inputCard--resultCard {
+  background-color: #fff;
+}
+
+.resultCard__resultInfoContainer {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  justify-content: center;
+  align-items: start;
+  padding: 10px;
+  border: var(--border-color) 1px solid;
+  border-radius: 12px;
+  height: 98px;
+  width: 33%;
+}
+
+.inputCard__subText--resultsCard {
+  color: #525866;
+  margin-bottom: 5px;
+}
+
+.inputCard__sliderContainer--resultsCard {
+  flex-direction: row;
+  margin: 15px 0px 5px 0px;
+  gap: 10px;
+}
+.inputCard__svgContainer--resultsCard {
+  margin-bottom: 10px;
+}
+
+.resultsCard__graphContainer {
+  /* border: 1px red solid; */
+  display: flex;
+  flex-direction: column;
+}
+
+.resultsCard__graphLabelsContainer {
+  /* border: 0.1px orange solid; */
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0px;
+}
+
+.resultsCard__legend {
+  height: 8px;
+  width: 8px;
+  border-radius: 100%;
+}
+.resultsCard__legend--red {
+  background-color: #fec3c8;
+}
+.resultsCard__legend--blue {
+  background-color: #6895ff;
+}
+
+.resultsCard__labelWithLegendContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+/* TODO You've set a fixedWidth here */
+.resultsCard__graphPlaceholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 240px;
+  border: 0.1px rgba(128, 128, 128, 0.401) solid;
+  border-radius: 12px;
+}
+
+@media screen and (max-width: 1150px) {
+  main {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 620px) {
+  .inputCard {
+    width: 340px;
+  }
+  .inputCard__headingText {
+    font-size: 13px;
+  }
+  .inputCard__subText {
+    font-size: 10px;
+  }
+  .inputCard__sliderContainer--resultsCard {
+    gap: 2px;
+  }
+}

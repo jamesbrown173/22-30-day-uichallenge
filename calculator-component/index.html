@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retirement Contribution Calculator</title>
+    <script type="module" src="/main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="inputCard">
+        <div class="inputCard__innerContainer">
+          <div class="inputCard__titleContainer">
+            <div class="inputCard__itemsLeft">
+              <div class="inputCard__svgContainer">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14.1005 12C14.1005 10.8403 13.1603 9.90015 12.0006 9.90015C10.8409 9.90015 9.9007 10.8403 9.9007 12C9.9007 13.1598 10.8409 14.0999 12.0006 14.0999C13.1603 14.0999 14.1005 13.1598 14.1005 12ZM12.0006 8.40015C13.9888 8.40015 15.6005 10.0119 15.6005 12C15.6005 13.9882 13.9888 15.5999 12.0006 15.5999C10.0124 15.5999 8.4007 13.9882 8.4007 12C8.4007 10.0119 10.0124 8.40015 12.0006 8.40015Z"
+                    fill="black"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.56699 2.58984L17.433 2.58984L22.866 12.0001L17.433 21.4104H6.56698L1.13397 12.0001L6.56699 2.58984ZM7.43301 4.08984L2.86602 12.0001L7.43301 19.9104H16.567L21.134 12.0001L16.567 4.08984L7.43301 4.08984Z"
+                    fill="black"
+                  />
+                </svg>
+              </div>
+              <span class="inputCard__headingText"
+                >Retirement Contribution Calculator</span
+              >
+            </div>
+            <div class="inputCard__itemsRight">
+              <div class="inputCard__svgContainer">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M20.749 12.75L3.24926 12.75L3.24926 11.25L20.749 11.25L20.749 12.75Z"
+                    fill="#717784"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M19.9994 11.25C16.4718 11.25 13.5894 14.3521 13.5894 17.66L13.5894 18.41L15.0894 18.41L15.0894 17.66C15.0894 15.1485 17.332 12.75 19.9994 12.75L20.7494 12.75L20.7494 11.25L19.9994 11.25Z"
+                    fill="#717784"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M19.9994 12.75C16.4718 12.75 13.5894 9.64786 13.5894 6.33995L13.5894 5.58995L15.0894 5.58995L15.0894 6.33995C15.0894 8.85153 17.332 11.25 19.9994 11.25L20.7494 11.25L20.7494 12.75L19.9994 12.75Z"
+                    fill="#717784"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="inputCard__sliderContainer inputCard__sliderContainer--withBottomBorder"
+          >
+            <div class="inputCard__sliderContainerUpper">
+              <div class="inputCard__itemsLeft inputCard__itemsLeft--inSlider">
+                <span class="inputCard__headingText"> Your Age </span>
+                <span class="inputCard__subText"
+                  >Select the age when you'll start investing.</span
+                >
+              </div>
+              <div class="inputCard__itemsRight">
+                <span id="age" class="inputCard__number">30</span>
+              </div>
+            </div>
+            <div class="inputCard__sliderContainerLower">
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                id="inputSliderAge"
+                class="inputCard__slider inputCard__slider--age"
+              />
+              <div class="inputCard__sliderLabelsContainer">
+                <span class="inputCard__sliderLabel">Alert</span>
+                <span class="inputCard__sliderLabel">Safe</span>
+                <span class="inputCard__sliderLabel">Best</span>
+              </div>
+            </div>
+          </div>
+          <div class="inputCard__sliderContainer">
+            <div class="inputCard__sliderContainerUpper">
+              <div class="inputCard__itemsLeft inputCard__itemsLeft--inSlider">
+                <span class="inputCard__headingText">
+                  Your Yearly Contribution
+                </span>
+                <span class="inputCard__subText"
+                  >Select your minimum yearly investment amount.</span
+                >
+              </div>
+              <div class="inputCard__itemsRight">
+                <span id="yearContAmount" class="inputCard__number">$3000</span>
+              </div>
+            </div>
+            <div class="inputCard__sliderContainerLower">
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                id="inputSliderYearlyContributionAmount"
+                class="inputCard__slider inputCard__slider--yearlyContAmount"
+              />
+              <div class="inputCard__sliderLabelsContainer">
+                <span class="inputCard__sliderLabel">Alert</span>
+                <span class="inputCard__sliderLabel">Safe</span>
+                <span class="inputCard__sliderLabel">Best</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="inputCard inputCard--resultCard">
+        <div class="inputCard__innerContainer">
+          <div class="inputCard__titleContainer">
+            <div class="inputCard__itemsLeft">
+              <div class="inputCard__svgContainer">
+                <svg
+                  width="24"
+                  height="27"
+                  viewBox="0 0 24 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.91367 10.7269V18.7767H6.41367V10.7269H7.91367Z"
+                    fill="#1D2020"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.7506 7.64246V18.7767H11.2506V7.64246H12.7506Z"
+                    fill="#1D2020"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M17.5865 14.1335V18.7769H16.0865V14.1335H17.5865Z"
+                    fill="#1D2020"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M2 23.9L2 2.51907L22 2.51907L22 23.9L2 23.9ZM3.5 22.2965L20.5 22.2965L20.5 4.12264L3.5 4.12264L3.5 22.2965Z"
+                    fill="#1D2020"
+                  />
+                </svg>
+              </div>
+              <span class="inputCard__headingText"
+                >Retirement Contribution Calculator</span
+              >
+            </div>
+            <div class="inputCard__itemsRight">
+              <div class="inputCard__svgContainer">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M20.749 12.75L3.24926 12.75L3.24926 11.25L20.749 11.25L20.749 12.75Z"
+                    fill="#717784"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M19.9994 11.25C16.4718 11.25 13.5894 14.3521 13.5894 17.66L13.5894 18.41L15.0894 18.41L15.0894 17.66C15.0894 15.1485 17.332 12.75 19.9994 12.75L20.7494 12.75L20.7494 11.25L19.9994 11.25Z"
+                    fill="#717784"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M19.9994 12.75C16.4718 12.75 13.5894 9.64786 13.5894 6.33995L13.5894 5.58995L15.0894 5.58995L15.0894 6.33995C15.0894 8.85153 17.332 11.25 19.9994 11.25L20.7494 11.25L20.7494 12.75L19.9994 12.75Z"
+                    fill="#717784"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="inputCard__sliderContainer inputCard__sliderContainer--resultsCard"
+          >
+            <div class="resultCard__resultInfoContainer">
+              <div
+                class="inputCard__svgContainer inputCard__svgContainer--resultsCard"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M11.7041 7.35205L14.9202 7.35205V8.35205H11.7042M11.7042 8.35205C10.9373 8.35261 10.3979 8.90766 10.3978 9.4957C10.3983 10.0844 10.9377 10.6393 11.7044 10.6397H14.9202V11.6397H11.7041C10.4762 11.639 9.39862 10.7233 9.3978 9.4962C9.3978 8.26855 10.4766 7.35274 11.7041 7.35205"
+                    fill="#335CFF"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1.07944 3.31732H14.9203V14.6667H1.07944V3.31732ZM2.07944 4.31732V13.6667H13.9203V4.31732H2.07944Z"
+                    fill="#335CFF"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1.07944 1.33331L13.1656 1.33385V4.252H12.1656V2.3338L2.07944 2.33336V14.6664H1.07944V1.33331Z"
+                    fill="#335CFF"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4.12241 6.36255H8.74476V7.36255H4.12241V6.36255Z"
+                    fill="#335CFF"
+                  />
+                </svg>
+              </div>
+              <span class="inputCard__subText inputCard__subText--resultsCard"
+                >Amount Invested</span
+              >
+              <span class="inputCard__headingText">$ 96,280.00</span>
+            </div>
+            <div class="resultCard__resultInfoContainer">
+              <div
+                class="inputCard__svgContainer inputCard__svgContainer--resultsCard"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14.6667 14.6667L1.33332 14.6667L1.33333 1.33335L14.6667 1.33335L14.6667 14.6667ZM13.6667 13.6667L13.6667 2.33335L2.33332 2.33335L2.33332 13.6667L13.6667 13.6667Z"
+                    fill="#1DAF61"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.5 11.2239L7.5 5.27444L8.5 5.27444L8.5 11.2239L7.5 11.2239Z"
+                    fill="#1DAF61"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10.4972 8.49225L8.00004 5.98443L5.50288 8.49225L4.79427 7.78665L8.00004 4.56719L11.2058 7.78665L10.4972 8.49225Z"
+                    fill="#1DAF61"
+                  />
+                </svg>
+              </div>
+              <span class="inputCard__subText inputCard__subText--resultsCard"
+                >Investment Earnings</span
+              >
+              <span class="inputCard__headingText">$ 32,150.00</span>
+            </div>
+            <div class="resultCard__resultInfoContainer">
+              <div
+                class="inputCard__svgContainer inputCard__svgContainer--resultsCard"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1.33331 1.33331L1.33331 14.6666L14.6666 14.6666L14.6666 1.33331L1.33331 1.33331ZM2.33331 2.33331L13.6666 2.33331L13.6666 13.6666L2.33331 13.6666L2.33331 2.33331Z"
+                    fill="#FB9937"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4.77606 8.5L10.7256 8.5L10.7256 7.5L4.77606 7.5L4.77606 8.5Z"
+                    fill="#FB9937"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.50775 5.5028L10.0156 7.99996L7.50775 10.4971L8.21335 11.2057L11.4328 7.99996L8.21335 4.79419L7.50775 5.5028Z"
+                    fill="#FB9937"
+                  />
+                </svg>
+              </div>
+              <span class="inputCard__subText inputCard__subText--resultsCard"
+                >Retirement Amount</span
+              >
+              <span class="inputCard__headingText">$ 8,640.00</span>
+            </div>
+          </div>
+          <div class="resultsCard__graphContainer">
+            <div class="resultsCard__graphLabelsContainer">
+              <div class="resultsCard__labelWithLegendContainer">
+                <div class="resultsCard__legend resultsCard__legend--red"></div>
+                <span class="inputCard__subText"> With Retirement Fund </span>
+              </div>
+              <div class="resultsCard__labelWithLegendContainer">
+                <div
+                  class="resultsCard__legend resultsCard__legend--blue"
+                ></div>
+                <span class="inputCard__subText">
+                  Savings Account (No Interest)
+                </span>
+              </div>
+            </div>
+            <div class="resultsCard__graphPlaceholder">
+              <span class="inputCard__subText">graph</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
