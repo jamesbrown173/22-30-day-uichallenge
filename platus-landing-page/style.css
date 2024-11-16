@@ -28,7 +28,7 @@ html {
 }
 
 * {
-  /* border: 1px solid red; */
+  /* border: 0.1px solid red; */
 }
 
 a {
@@ -215,6 +215,7 @@ h1 {
   font-size: 11px;
   padding: 20px;
   text-align: justify;
+  z-index: 99;
 }
 
 .footer__itemsContainer {
@@ -222,11 +223,12 @@ h1 {
   color: #484848;
   font-weight: bold;
   font-size: 10px;
-  gap: 40px;
+  gap: 20px;
   flex-wrap: wrap;
   margin: 20px 20px 0px 20px;
   justify-content: center;
-  margin-bottom: 100px;
+
+  /* margin-bottom: 100px; */
 }
 
 @keyframes orbAnimation {
@@ -296,4 +298,23 @@ h1 {
 }
 
 @media (max-width: 963px) {
+}
+
+footer {
+  width: 95%;
+  max-width: 1200px;
+  padding-bottom: 20px;
+}
+
+.footer__personalLink {
+  margin-top: 20px;
+  font-size: 12px;
+  color: rgb(118, 118, 118);
+  font-weight: 300;
+}
+
+.footer__personalLink a {
+  text-decoration: none;
+  color: rgb(60, 60, 60);
+  font-weight: 500;
 }

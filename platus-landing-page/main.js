@@ -3,26 +3,26 @@ const main = document.querySelector(".main");
 // Define properties for each orb
 const orbs = [
   {
-    width: 400,
-    height: 800,
+    width: 800,
+    height: 900,
     opacity: 0.6,
     top: "-30%",
-    left: "10%",
+    right: "10%",
     color: "#E17025",
     rotate: "-55deg",
   },
   {
-    width: 250,
-    height: 600,
+    width: 550,
+    height: 900,
     opacity: 0.2,
     top: "-10%",
-    left: "50%",
+    right: "10%",
     color: "white",
     rotate: "15deg",
   },
   {
     width: 200,
-    height: 600,
+    height: 900,
     top: "-30%",
     opacity: 0.1,
     left: "60%",
@@ -31,7 +31,7 @@ const orbs = [
   },
   {
     width: 300,
-    height: 400,
+    height: 900,
     top: "0%",
     left: "30%",
     color: "#E4825A",
@@ -40,7 +40,7 @@ const orbs = [
   },
   {
     width: 300,
-    height: 600,
+    height: 900,
     top: "-10%",
     left: "-10%",
     color: "#E47C4F",
