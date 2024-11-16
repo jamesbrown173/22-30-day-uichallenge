@@ -26,7 +26,7 @@ main {
   height: fit-content;
   width: 100vw;
   gap: 10px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .inputCard {
@@ -36,7 +36,7 @@ main {
 
   width: 534px;
 
-  padding: 30px 20px;
+  padding: 30px 20px 20px 20px;
 }
 
 .inputCard__innerContainer {
@@ -291,6 +291,6 @@ main {
     font-size: 10px;
   }
   .inputCard__sliderContainer--resultsCard {
-    gap: 2px;
+    gap: 6px;
   }
 }
