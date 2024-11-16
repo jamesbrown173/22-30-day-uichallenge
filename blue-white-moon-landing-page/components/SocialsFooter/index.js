@@ -4,7 +4,17 @@ const sharedSvgStyles = "size-8  cursor-pointer mb-4";
 
 const SocialsFooter = () => {
   return (
-    <div className="flex justify-end relative">
+    <div className="flex justify-between relative">
+      <div className="font-extralight text-[12px] opacity-80">
+        Made by{" "}
+        <a
+          href="https://bento.me/jamesbxyz"
+          className="font-bold cursor-pointer"
+          target="_new"
+        >
+          James
+        </a>
+      </div>
       <div className="flex gap-2 relative lg:-right-[30px] ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -27,8 +37,6 @@ const SocialsFooter = () => {
           />
         </svg>
       </div>
-      <img src="" />
-      <img src="" />
     </div>
   );
 };

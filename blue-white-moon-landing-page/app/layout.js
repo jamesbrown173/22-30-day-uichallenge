@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
         </header>
         {children}
 
-        <footer className="place-self-end">
+        <footer className="w-full px-4">
           <SocialsFooter />
         </footer>
       </body>
