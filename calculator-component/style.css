@@ -27,6 +27,12 @@ main {
   width: 100vw;
   gap: 10px;
   overflow-x: hidden;
+  position: relative;
+}
+
+main {
+  flex-wrap: wrap;
+  max-width: 1200px;
 }
 
 .inputCard {
@@ -275,9 +281,32 @@ main {
   padding: 0px;
 }
 
+.personalLinks__container {
+  /* border: 1px red solid; */
+  position: relative;
+  display: flex;
+  padding-top: 40px;
+
+  bottom: 10px;
+  left: 0px;
+  margin: 0px 0px -10px 20px;
+  font-size: 12px;
+  font-weight: 200;
+  width: 1096px;
+}
+
+.personalLinks__container a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #525866;
+}
+
 @media screen and (max-width: 1150px) {
   main {
     flex-direction: column;
+  }
+  .personalLinks__container {
+    width: 550px;
   }
 }
 @media screen and (max-width: 620px) {
@@ -300,5 +329,10 @@ main {
     /* border: 1px red solid; */
     height: 155px;
     margin-top: 5px;
+  }
+  .personalLinks__container {
+    width: 320px;
+    position: relative;
+    left: -20px;
   }
 }
