@@ -265,7 +265,7 @@ main {
 }
 
 /* TODO You've set a fixedWidth here */
-.resultsCard__graphPlaceholder {
+.resultsCard__graphHolder {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -292,5 +292,13 @@ main {
   }
   .inputCard__sliderContainer--resultsCard {
     gap: 6px;
+  }
+  .inputCard__subText--maxWidth200 {
+    max-width: 200px;
+  }
+  .resultsCard__graphHolder {
+    /* border: 1px red solid; */
+    height: 155px;
+    margin-top: 5px;
   }
 }
