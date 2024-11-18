@@ -9,8 +9,15 @@ const Navbar = () => {
   return (
     <div className="w-full flex justify-between items-center my-4 smCustom:px-6 px-4">
       {/* Left Items */}
-      <div className="flex justify-center items-center max-w-[137px]  min-w-[137px] h-[75px]">
-        <img src="/logo-white.svg" className="" />
+      <div className="flex justify-start items-center max-w-[137px]  min-w-[137px] h-[75px]">
+        {/* <img src="/logo-white.svg" className="" /> */}
+        {/* <div className=" flex flex-col sm:-ml-20  mt-2"> */}
+        <div className=" flex flex-col  md:-ml-6 mt-2">
+          <h1 className="font-bold italic uppercase box-shadow-lg text-2xl -mt-2">
+            Prime``
+          </h1>
+          <span className="box-shadow-lg -mt-2 font-thin text-lg">Leads</span>
+        </div>
       </div>
 
       {/* Middle Items / Menu Bar */}

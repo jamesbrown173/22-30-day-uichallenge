@@ -15,14 +15,14 @@ export default function Home() {
         <h1 className="sm:text-5xl text-3xl max-w-[600px] w-[80vw] text-center font-semibold sm:leading-[51px] leading-[30px] tracking-normal text-stroke text-stroke drop-shadow-lg">
           Bring Interested Clients & Get Paid As Never Before!
         </h1>
-        <p className="font-light max-w-[600px] w-[80vw] text-center  leading-[20px] italic mt-[20px]">
+        <p className="font-light max-w-[600px] w-[80vw] text-center  leading-[20px] italic mt-[25px]">
           <span className="font-bold">Number #1 Affiliate</span> Platform that
           provides you marketing assets Higher payout, dedicated support and
           mentoring, All in one!
         </p>
 
         {/* --- Buttons Container --- */}
-        <div className="flex gap-10 pt-[20px] text-base mb-20 z-50">
+        <div className="flex gap-10 pt-[20px] text-base mb-20 mt-1 z-50">
           <DarkButton
             innerText="Start Earning Today"
             additionalSytles="px-6 py-[20px] cursor-pointer"

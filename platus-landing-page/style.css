@@ -43,6 +43,7 @@ a {
 
 body {
   margin-top: 50px;
+
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
@@ -50,11 +51,13 @@ body {
   justify-content: start;
   height: fit-content;
 
-  background: linear-gradient(
+  background-image: url("/public/img-noise-1000x1000p30.png");
+
+  /* background: linear-gradient(
     183deg,
     rgb(255, 229, 218) 60%,
     rgba(255, 255, 255, 1) 100%
-  );
+  ); */
 }
 
 .main {
@@ -71,6 +74,8 @@ body {
   position: relative;
   overflow: hidden;
   box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.73);
+
+  position: relative;
 }
 
 .orb {
@@ -94,6 +99,7 @@ body {
   /* border: 2px green solid; */
   margin: 10px 10px;
   z-index: 99;
+  position: relative;
 }
 
 h2 {
@@ -171,6 +177,7 @@ h1 {
   color: white;
   line-height: 74px;
   text-align: center;
+  mix-blend-mode: hard-light;
 }
 
 .main__container {
@@ -223,6 +230,8 @@ h1 {
   color: #484848;
   font-weight: bold;
   font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
   gap: 20px;
   flex-wrap: wrap;
   margin: 20px 20px 0px 20px;

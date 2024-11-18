@@ -6,7 +6,7 @@ const SocialsFooter = () => {
   return (
     <div className="flex justify-between relative">
       <div className="font-extralight text-[12px] opacity-80">
-        Made by{" "}
+        Developed by{" "}
         <a
           href="https://bento.me/jamesbxyz"
           className="font-bold cursor-pointer"
