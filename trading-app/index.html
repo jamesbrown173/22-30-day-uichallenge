@@ -9,8 +9,764 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="app">
-      <!-- Hello James, this is your first attempt at coding in Linux. -->
-    </div>
+    <main>
+      <span class="developedByJames"
+        >Developed by
+        <a
+          href="https://bento.me/jamesbxyz"
+          target="_blank"
+          class="developedByJames--link"
+          >James</a
+        ></span
+      >
+      <!-- <div class="loginSectionContainer">
+        <div class="loginSection__loginFormContainer">
+          <div class="loginSection__loginTitleContainer">
+            <div
+              class="loginSection__svgContainer loginSection__svgContainer--profileImage"
+            >
+              <img src="/public/User.svg" alt="user-icon" />
+            </div>
+            <span class="headingText">Create new account!</span>
+          </div>
+
+          <div class="loginSection__loginWithGoogleButton">
+            <div class="loginSection__svgContainer">
+              <img src="/public/google-logo.svg" alt="google-logo" />
+            </div>
+            <span class="buttonText">Log in with Google</span>
+          </div>
+
+          <span class="labelAndInputText">or</span>
+
+          <div class="loginSection__loginInputFieldsContainer">
+            <form>
+              <div class="loginSection__fieldGroupContainer">
+                <label class="labelAndInputText" for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="loginSection__fieldGroupContainer">
+                <label class="labelAndInputText" for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+
+              <div class="loginSection__fieldGroupContainer">
+                <label class="labelAndInputText" for="password">Password</label>
+                <div class="loginSection__passwordContainer">
+                  <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    required
+                  />
+                  <button
+                    type="button"
+                    class="toggleVisibilityPassword"
+                    onclick="togglePassword()"
+                  >
+                    <img src="/public/eye-slash.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+
+              <div
+                type="submit"
+                class="loginSection__submitButton loginSection__submitButton--loginCard"
+              >
+                <span class="buttonText">Continue</span>
+              </div>
+
+              <span class="bodyText loginSection__accountAlreadyText"
+                >Already have account?
+                <span class="bodyText--accentPurple">Sign in here!</span></span
+              >
+            </form>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="heroSectionContainer heroSectionContainer--page1">
+        <div class="heroSection__upperRelativeContainer">
+          <svg
+            class="heroSection__gradientOrb"
+            width="582"
+            height="401"
+            viewBox="0 0 582 401"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g filter="url(#filter0_f_17002_15377)">
+              <ellipse
+                cx="290.986"
+                cy="200.285"
+                rx="197.766"
+                ry="84.9047"
+                transform="rotate(-17.0939 290.986 200.285)"
+                fill="#9C8AF9"
+                fill-opacity="0.11"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_f_17002_15377"
+                x="0.294922"
+                y="0.451538"
+                width="581.383"
+                height="399.667"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="50"
+                  result="effect1_foregroundBlur_17002_15377"
+                />
+              </filter>
+            </defs>
+          </svg>
+
+          <img src="/public/grid-lines.svg" alt="grid-lines" />
+
+          <div class="heroSection__tipCard heroSection__tipCard--dark">
+            <span
+              class="headingText headingText--tipCard headingText--tipCardDark"
+              >Tuesday</span
+            >
+            <span class="buttonText buttonText--tipCardHeading"
+              >Lower Volume, Lower Success</span
+            >
+            <span class="bodyText bodyText--tipCard">
+              Beyond relative volume, the day of the week can also influence
+              performance. Early analysis indicates that Tuesday show promise,
+              with strong win rates and positive returns.
+            </span>
+          </div>
+
+          <div class="heroSection__graphCard">
+            <div class="heroSection__dataDisplayContainer">
+              <span class="headingText"> 19800$ </span>
+              <span class="subText"> Profit </span>
+            </div>
+
+            <svg
+              width="257"
+              height="72"
+              viewBox="0 0 257 72"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.1667 50.4851L16 51V65H241V11L236.833 14.9011C232.667 18.8021 224.333 26.6042 216 31.1241C207.667 35.6439 199.333 36.8815 191 37.719C182.667 38.5565 174.333 38.9938 166 38.0647C157.667 37.1356 149.333 34.8401 141 34.3663C132.667 33.8926 124.333 35.2405 116 35.5855C107.667 35.9304 99.3333 35.2723 91 35.0946C82.6667 34.917 74.3333 35.2197 66 37.4358C57.6667 39.6519 49.3333 43.7813 41 46.3609C32.6667 48.9405 24.3333 49.9702 20.1667 50.4851Z"
+                fill="url(#paint0_linear_17035_30620)"
+                fill-opacity="0.8"
+              />
+              <g filter="url(#filter0_d_17035_30620)">
+                <path
+                  d="M16 51L20.1667 50.4851C24.3333 49.9702 32.6667 48.9405 41 46.3609C49.3333 43.7813 57.6667 39.6519 66 37.4358C74.3333 35.2197 82.6667 34.917 91 35.0946C99.3333 35.2723 107.667 35.9304 116 35.5855C124.333 35.2405 132.667 33.8926 141 34.3663C149.333 34.8401 157.667 37.1356 166 38.0647C174.333 38.9938 182.667 38.5565 191 37.719C199.333 36.8815 207.667 35.6439 216 31.1241C224.333 26.6042 232.667 18.8021 236.833 14.9011L241 11"
+                  stroke="#BC8CF8"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_d_17035_30620"
+                  x="0"
+                  y="0"
+                  width="257"
+                  height="72.0001"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"
+                  />
+                  <feOffset dy="5" />
+                  <feGaussianBlur stdDeviation="7.5" />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0.647059 0 0 0 0 0.584314 0 0 0 0 0.972549 0 0 0 0.2 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow_17035_30620"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow_17035_30620"
+                    result="shape"
+                  />
+                </filter>
+                <linearGradient
+                  id="paint0_linear_17035_30620"
+                  x1="114.055"
+                  y1="11"
+                  x2="114.055"
+                  y2="65"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#BC8CF8" />
+                  <stop offset="1" stop-color="#BC8CF8" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="heroSection__graphCard heroSection__graphCard--purple">
+            <div class="heroSection__dataDisplayContainer">
+              <span class="headingText"> 350$ </span>
+              <span class="subText"> Total fees </span>
+            </div>
+            <svg
+              width="266"
+              height="78"
+              viewBox="0 0 266 78"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.9 54.0886L16 56.7625V65.7625H250V11.7625L246.1 13.5677C242.2 15.373 234.4 18.9835 226.6 24.3993C218.8 29.8152 211 37.0363 203.2 36.2458C195.4 35.4552 187.6 26.653 179.8 27.2864C172 27.9199 164.2 37.9892 156.4 39.9821C148.6 41.9751 140.8 35.8917 133 29.7689L132.732 29.5587C125.021 23.5055 117.311 17.4523 109.6 14.7286C101.8 11.9734 94 12.6251 86.2 14.7388C78.4 16.8526 70.6 20.4283 62.8 25.002C55 29.5758 47.2 35.1475 39.4 40.6073C31.6 46.067 23.8001 51.4147 19.9001 54.0885L19.9 54.0886Z"
+                fill="url(#paint0_linear_17015_15154)"
+                fill-opacity="0.8"
+              />
+              <g filter="url(#filter0_d_17015_15154)">
+                <path
+                  d="M16 56.7625L19.9 54.0886C23.8 51.4147 31.6 46.067 39.4 40.6073C47.2 35.1475 55 29.5758 62.8 25.002C70.6 20.4283 78.4 16.8526 86.2 14.7388C94 12.6251 101.8 11.9734 109.6 14.7286C117.4 17.4839 125.2 23.6461 133 29.7689C140.8 35.8917 148.6 41.9751 156.4 39.9821C164.2 37.9892 172 27.9199 179.8 27.2864C187.6 26.653 195.4 35.4552 203.2 36.2458C211 37.0363 218.8 29.8152 226.6 24.3993C234.4 18.9835 242.2 15.373 246.1 13.5677L250 11.7625"
+                  stroke="#4C76D6"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_d_17015_15154"
+                  x="0"
+                  y="0.762207"
+                  width="266"
+                  height="77.0002"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"
+                  />
+                  <feOffset dy="5" />
+                  <feGaussianBlur stdDeviation="7.5" />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0.188235 0 0 0 0 0.368627 0 0 0 0 0.776471 0 0 0 0.2 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow_17015_15154"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow_17015_15154"
+                    result="shape"
+                  />
+                </filter>
+                <linearGradient
+                  id="paint0_linear_17015_15154"
+                  x1="118"
+                  y1="11.7625"
+                  x2="118"
+                  y2="65.7625"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#305EC6" />
+                  <stop offset="1" stop-color="#305EC6" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="heroSection__graphCard heroSection__graphCard--green">
+            <div class="heroSection__dataDisplayContainer">
+              <span class="headingText"> 2.1 </span>
+              <span class="subText">
+                Profit Factor
+
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.875 0C3.91082 0 2.96829 0.285914 2.1666 0.821586C1.36491 1.35726 0.740067 2.11863 0.371089 3.00942C0.00211226 3.90021 -0.094429 4.88041 0.093674 5.82607C0.281777 6.77172 0.746076 7.64036 1.42786 8.32215C2.10964 9.00393 2.97828 9.46823 3.92394 9.65633C4.86959 9.84443 5.84979 9.74789 6.74058 9.37891C7.63137 9.00994 8.39275 8.38509 8.92842 7.5834C9.46409 6.78171 9.75 5.83918 9.75 4.875C9.74864 3.58249 9.23458 2.34331 8.32064 1.42936C7.4067 0.515418 6.16751 0.00136492 4.875 0ZM4.6875 2.25C4.79875 2.25 4.90751 2.28299 5.00001 2.3448C5.09251 2.40661 5.16461 2.49446 5.20718 2.59724C5.24976 2.70002 5.2609 2.81312 5.23919 2.92224C5.21749 3.03135 5.16392 3.13158 5.08525 3.21025C5.00658 3.28891 4.90635 3.34249 4.79724 3.36419C4.68813 3.3859 4.57503 3.37476 4.47224 3.33218C4.36946 3.28961 4.28161 3.21751 4.2198 3.12501C4.15799 3.03251 4.125 2.92375 4.125 2.8125C4.125 2.66332 4.18427 2.52024 4.28975 2.41475C4.39524 2.30926 4.53832 2.25 4.6875 2.25ZM5.25 7.5C5.05109 7.5 4.86032 7.42098 4.71967 7.28033C4.57902 7.13968 4.5 6.94891 4.5 6.75V4.875C4.40055 4.875 4.30516 4.83549 4.23484 4.76516C4.16451 4.69484 4.125 4.59946 4.125 4.5C4.125 4.40054 4.16451 4.30516 4.23484 4.23484C4.30516 4.16451 4.40055 4.125 4.5 4.125C4.69891 4.125 4.88968 4.20402 5.03033 4.34467C5.17098 4.48532 5.25 4.67609 5.25 4.875V6.75C5.34946 6.75 5.44484 6.78951 5.51517 6.85983C5.58549 6.93016 5.625 7.02554 5.625 7.125C5.625 7.22446 5.58549 7.31984 5.51517 7.39017C5.44484 7.46049 5.34946 7.5 5.25 7.5Z"
+                    fill="url(#paint0_linear_17002_15435)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_17002_15435"
+                      x1="0"
+                      y1="4.875"
+                      x2="9.75"
+                      y2="4.875"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#BC8CF8" />
+                      <stop offset="1" stop-color="#9544FC" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </span>
+            </div>
+            <svg
+              width="266"
+              height="79"
+              viewBox="0 0 266 79"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.5758 56.5946L15 58V75H251V11L247.424 15.1239C243.849 19.2479 236.697 27.4958 229.545 28.7293C222.394 29.9629 215.242 24.1821 208.091 23.9737C200.939 23.7654 193.788 29.1294 186.636 32.7289C179.485 36.3285 172.333 38.1636 165.182 39.3705C158.03 40.5775 150.879 41.1563 143.727 39.2911C136.576 37.4259 129.424 33.1167 122.273 34.6864C115.121 36.2561 107.97 43.7047 100.818 45.1656C93.6667 46.6266 86.5152 42.0998 79.3636 38.6892C72.2121 35.2786 65.0606 32.9842 57.9091 34.9832C50.7576 36.9823 43.6061 43.2749 36.4545 47.8266C29.303 52.3783 22.1515 55.1891 18.5758 56.5946Z"
+                fill="url(#paint0_linear_17015_15167)"
+                fill-opacity="0.8"
+              />
+              <g filter="url(#filter0_d_17015_15167)">
+                <path
+                  d="M16 58L19.5455 56.5946C23.0909 55.1891 30.1818 52.3783 37.2727 47.8266C44.3636 43.2749 51.4545 36.9823 58.5455 34.9832C65.6364 32.9842 72.7273 35.2786 79.8182 38.6892C86.9091 42.0998 94 46.6266 101.091 45.1656C108.182 43.7047 115.273 36.2561 122.364 34.6864C129.455 33.1167 136.545 37.4259 143.636 39.2911C150.727 41.1563 157.818 40.5775 164.909 39.3705C172 38.1636 179.091 36.3285 186.182 32.7289C193.273 29.1294 200.364 23.7654 207.455 23.9737C214.545 24.1821 221.636 29.9629 228.727 28.7293C235.818 27.4958 242.909 19.2479 246.455 15.1239L250 11"
+                  stroke="#78C5FE"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_d_17015_15167"
+                  x="0"
+                  y="0"
+                  width="266"
+                  height="79.0002"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"
+                  />
+                  <feOffset dy="5" />
+                  <feGaussianBlur stdDeviation="7.5" />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0.470588 0 0 0 0 0.772549 0 0 0 0 0.996078 0 0 0 0.2 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow_17015_15167"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow_17015_15167"
+                    result="shape"
+                  />
+                </filter>
+                <linearGradient
+                  id="paint0_linear_17015_15167"
+                  x1="117.872"
+                  y1="11"
+                  x2="117.872"
+                  y2="75"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#6BAFE1" />
+                  <stop offset="1" stop-color="#0E5F95" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="heroSection__dataCard">
+            <span class="headingText"> 1750$ </span>
+            <span class="subText"> Biggest Win </span>
+          </div>
+          <div class="heroSection__dataCard heroSection__dataCard--averageWin">
+            <span class="headingText"> 420$ </span>
+            <span class="subText"> Average Win </span>
+          </div>
+        </div>
+        <span class="headingText--large">Unlock the Market's Secrets</span>
+        <span class="subText--large">
+          Track how market indicators affect your stats.
+        </span>
+        <div class="heroSection__paginationContainer">
+          <div class="heroSection__paginationDot"></div>
+          <div
+            class="heroSection__paginationDot heroSection__paginationDot--active"
+          ></div>
+          <div class="heroSection__paginationDot"></div>
+        </div>
+      </div>
+
+      <!-- <div class="heroSectionContainer heroSectionContainer--page2">
+        <div class="heroSection__upperRelativeContainer">
+          <svg
+            class="heroSection__gradientOrb"
+            width="582"
+            height="401"
+            viewBox="0 0 582 401"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g filter="url(#filter0_f_17002_15377)">
+              <ellipse
+                cx="290.986"
+                cy="200.285"
+                rx="197.766"
+                ry="84.9047"
+                transform="rotate(-17.0939 290.986 200.285)"
+                fill="#9C8AF9"
+                fill-opacity="0.11"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_f_17002_15377"
+                x="0.294922"
+                y="0.451538"
+                width="581.383"
+                height="399.667"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="50"
+                  result="effect1_foregroundBlur_17002_15377"
+                />
+              </filter>
+            </defs>
+          </svg>
+
+          <img src="/public/grid-lines.svg" alt="grid-lines" />
+
+          <div class="heroSection__tipCard">
+            <span class="headingText headingText--tipCard">Actionable Tip</span>
+            <span class="buttonText buttonText--tipCardHeading"
+              >Adjust Your Strategy for Better Results</span
+            >
+            <span class="bodyText bodyText--tipCard">
+              By closing losses by the end of the day and letting winners run
+              into the next, you could've boosted your returns by 10% and
+              increased your profit factor by 0.5 over the past month.
+            </span>
+            <div
+              class="loginSection__submitButton loginSection__submitButton--tipCard"
+            >
+              <span class="buttonText">Uncover it here!</span>
+            </div>
+            <div class="heroSection__blobTopRight"></div>
+          </div>
+          <div class="heroSection__graphCard">
+            <div class="heroSection__dataDisplayContainer">
+              <span class="headingText"> $2500 </span>
+              <span class="subText"> Cumulative Return </span>
+            </div>
+            <svg
+              width="266"
+              height="72"
+              viewBox="0 0 266 72"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M26.4698 36.8671L16 48.9336V65H250V33.4873C250 33.4873 208 50.9725 191.5 50.9725C175 50.9725 149 33.4289 133 25.8061C117 18.1833 101.092 9.48149 79.5 11.2256C56.5478 13.0796 43.3797 19.857 26.4698 36.8671Z"
+                fill="url(#paint0_linear_17015_15123)"
+                fill-opacity="0.8"
+              />
+              <g filter="url(#filter0_d_17015_15123)">
+                <path
+                  d="M16 48.9336L26.4698 36.8671C43.3797 19.857 56.5478 13.0796 79.5 11.2256C101.092 9.48149 117 18.1833 133 25.8061C149 33.4289 175 50.9725 191.5 50.9725C208 50.9725 250 33.5 250 33.5"
+                  stroke="#BC8CF8"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_d_17015_15123"
+                  x="0"
+                  y="0.000244141"
+                  width="266"
+                  height="71.9722"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"
+                  />
+                  <feOffset dy="5" />
+                  <feGaussianBlur stdDeviation="7.5" />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0.647059 0 0 0 0 0.584314 0 0 0 0 0.972549 0 0 0 0.2 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow_17015_15123"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow_17015_15123"
+                    result="shape"
+                  />
+                </filter>
+                <linearGradient
+                  id="paint0_linear_17015_15123"
+                  x1="118"
+                  y1="11"
+                  x2="118"
+                  y2="65"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#BC8CF8" />
+                  <stop offset="1" stop-color="#BC8CF8" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="heroSection__graphCard heroSection__graphCard--purple">
+            <div class="heroSection__dataDisplayContainer">
+              <span class="headingText"> 350$ </span>
+              <span class="subText"> Total fees </span>
+            </div>
+            <svg
+              width="266"
+              height="78"
+              viewBox="0 0 266 78"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.9 54.0886L16 56.7625V65.7625H250V11.7625L246.1 13.5677C242.2 15.373 234.4 18.9835 226.6 24.3993C218.8 29.8152 211 37.0363 203.2 36.2458C195.4 35.4552 187.6 26.653 179.8 27.2864C172 27.9199 164.2 37.9892 156.4 39.9821C148.6 41.9751 140.8 35.8917 133 29.7689L132.732 29.5587C125.021 23.5055 117.311 17.4523 109.6 14.7286C101.8 11.9734 94 12.6251 86.2 14.7388C78.4 16.8526 70.6 20.4283 62.8 25.002C55 29.5758 47.2 35.1475 39.4 40.6073C31.6 46.067 23.8001 51.4147 19.9001 54.0885L19.9 54.0886Z"
+                fill="url(#paint0_linear_17015_15154)"
+                fill-opacity="0.8"
+              />
+              <g filter="url(#filter0_d_17015_15154)">
+                <path
+                  d="M16 56.7625L19.9 54.0886C23.8 51.4147 31.6 46.067 39.4 40.6073C47.2 35.1475 55 29.5758 62.8 25.002C70.6 20.4283 78.4 16.8526 86.2 14.7388C94 12.6251 101.8 11.9734 109.6 14.7286C117.4 17.4839 125.2 23.6461 133 29.7689C140.8 35.8917 148.6 41.9751 156.4 39.9821C164.2 37.9892 172 27.9199 179.8 27.2864C187.6 26.653 195.4 35.4552 203.2 36.2458C211 37.0363 218.8 29.8152 226.6 24.3993C234.4 18.9835 242.2 15.373 246.1 13.5677L250 11.7625"
+                  stroke="#4C76D6"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_d_17015_15154"
+                  x="0"
+                  y="0.762207"
+                  width="266"
+                  height="77.0002"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"
+                  />
+                  <feOffset dy="5" />
+                  <feGaussianBlur stdDeviation="7.5" />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0.188235 0 0 0 0 0.368627 0 0 0 0 0.776471 0 0 0 0.2 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow_17015_15154"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow_17015_15154"
+                    result="shape"
+                  />
+                </filter>
+                <linearGradient
+                  id="paint0_linear_17015_15154"
+                  x1="118"
+                  y1="11.7625"
+                  x2="118"
+                  y2="65.7625"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#305EC6" />
+                  <stop offset="1" stop-color="#305EC6" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="heroSection__graphCard heroSection__graphCard--green">
+            <div class="heroSection__dataDisplayContainer">
+              <span class="headingText"> 2.1 </span>
+              <span class="subText">
+                Profit Factor
+
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.875 0C3.91082 0 2.96829 0.285914 2.1666 0.821586C1.36491 1.35726 0.740067 2.11863 0.371089 3.00942C0.00211226 3.90021 -0.094429 4.88041 0.093674 5.82607C0.281777 6.77172 0.746076 7.64036 1.42786 8.32215C2.10964 9.00393 2.97828 9.46823 3.92394 9.65633C4.86959 9.84443 5.84979 9.74789 6.74058 9.37891C7.63137 9.00994 8.39275 8.38509 8.92842 7.5834C9.46409 6.78171 9.75 5.83918 9.75 4.875C9.74864 3.58249 9.23458 2.34331 8.32064 1.42936C7.4067 0.515418 6.16751 0.00136492 4.875 0ZM4.6875 2.25C4.79875 2.25 4.90751 2.28299 5.00001 2.3448C5.09251 2.40661 5.16461 2.49446 5.20718 2.59724C5.24976 2.70002 5.2609 2.81312 5.23919 2.92224C5.21749 3.03135 5.16392 3.13158 5.08525 3.21025C5.00658 3.28891 4.90635 3.34249 4.79724 3.36419C4.68813 3.3859 4.57503 3.37476 4.47224 3.33218C4.36946 3.28961 4.28161 3.21751 4.2198 3.12501C4.15799 3.03251 4.125 2.92375 4.125 2.8125C4.125 2.66332 4.18427 2.52024 4.28975 2.41475C4.39524 2.30926 4.53832 2.25 4.6875 2.25ZM5.25 7.5C5.05109 7.5 4.86032 7.42098 4.71967 7.28033C4.57902 7.13968 4.5 6.94891 4.5 6.75V4.875C4.40055 4.875 4.30516 4.83549 4.23484 4.76516C4.16451 4.69484 4.125 4.59946 4.125 4.5C4.125 4.40054 4.16451 4.30516 4.23484 4.23484C4.30516 4.16451 4.40055 4.125 4.5 4.125C4.69891 4.125 4.88968 4.20402 5.03033 4.34467C5.17098 4.48532 5.25 4.67609 5.25 4.875V6.75C5.34946 6.75 5.44484 6.78951 5.51517 6.85983C5.58549 6.93016 5.625 7.02554 5.625 7.125C5.625 7.22446 5.58549 7.31984 5.51517 7.39017C5.44484 7.46049 5.34946 7.5 5.25 7.5Z"
+                    fill="url(#paint0_linear_17002_15435)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_17002_15435"
+                      x1="0"
+                      y1="4.875"
+                      x2="9.75"
+                      y2="4.875"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#BC8CF8" />
+                      <stop offset="1" stop-color="#9544FC" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </span>
+            </div>
+            <svg
+              width="266"
+              height="79"
+              viewBox="0 0 266 79"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.5758 56.5946L15 58V75H251V11L247.424 15.1239C243.849 19.2479 236.697 27.4958 229.545 28.7293C222.394 29.9629 215.242 24.1821 208.091 23.9737C200.939 23.7654 193.788 29.1294 186.636 32.7289C179.485 36.3285 172.333 38.1636 165.182 39.3705C158.03 40.5775 150.879 41.1563 143.727 39.2911C136.576 37.4259 129.424 33.1167 122.273 34.6864C115.121 36.2561 107.97 43.7047 100.818 45.1656C93.6667 46.6266 86.5152 42.0998 79.3636 38.6892C72.2121 35.2786 65.0606 32.9842 57.9091 34.9832C50.7576 36.9823 43.6061 43.2749 36.4545 47.8266C29.303 52.3783 22.1515 55.1891 18.5758 56.5946Z"
+                fill="url(#paint0_linear_17015_15167)"
+                fill-opacity="0.8"
+              />
+              <g filter="url(#filter0_d_17015_15167)">
+                <path
+                  d="M16 58L19.5455 56.5946C23.0909 55.1891 30.1818 52.3783 37.2727 47.8266C44.3636 43.2749 51.4545 36.9823 58.5455 34.9832C65.6364 32.9842 72.7273 35.2786 79.8182 38.6892C86.9091 42.0998 94 46.6266 101.091 45.1656C108.182 43.7047 115.273 36.2561 122.364 34.6864C129.455 33.1167 136.545 37.4259 143.636 39.2911C150.727 41.1563 157.818 40.5775 164.909 39.3705C172 38.1636 179.091 36.3285 186.182 32.7289C193.273 29.1294 200.364 23.7654 207.455 23.9737C214.545 24.1821 221.636 29.9629 228.727 28.7293C235.818 27.4958 242.909 19.2479 246.455 15.1239L250 11"
+                  stroke="#78C5FE"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_d_17015_15167"
+                  x="0"
+                  y="0"
+                  width="266"
+                  height="79.0002"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"
+                  />
+                  <feOffset dy="5" />
+                  <feGaussianBlur stdDeviation="7.5" />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0.470588 0 0 0 0 0.772549 0 0 0 0 0.996078 0 0 0 0.2 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow_17015_15167"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow_17015_15167"
+                    result="shape"
+                  />
+                </filter>
+                <linearGradient
+                  id="paint0_linear_17015_15167"
+                  x1="117.872"
+                  y1="11"
+                  x2="117.872"
+                  y2="75"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#6BAFE1" />
+                  <stop offset="1" stop-color="#0E5F95" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="heroSection__dataCard">
+            <span class="headingText"> 1750$ </span>
+            <span class="subText"> Biggest Win </span>
+          </div>
+          <div class="heroSection__dataCard heroSection__dataCard--averageWin">
+            <span class="headingText"> 420$ </span>
+            <span class="subText"> Average Win </span>
+          </div>
+        </div>
+        <span class="headingText--large">Unlock the Market's Secrets</span>
+        <span class="subText--large">
+          Track how market indicators affect your stats.
+        </span>
+        <div class="heroSection__paginationContainer">
+          <div class="heroSection__paginationDot"></div>
+          <div
+            class="heroSection__paginationDot heroSection__paginationDot--active"
+          ></div>
+          <div class="heroSection__paginationDot"></div>
+        </div>
+      </div> -->
+    </main>
   </body>
 </html>

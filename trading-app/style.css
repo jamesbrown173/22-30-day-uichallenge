@@ -2,11 +2,520 @@
 
 :root {
   font-family: "Plus Jakarta Sans", serif;
+  --inputAndLabel-text-color: #6f6e73;
+  background-color: #131418;
+  --heroSection-background-color: #18181c;
+  --accent-gray: #18181c;
+  --border-gray: #36363a;
+  --accent-purple: #a99af8;
+  --light-button-purple: #ab9ef8;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  --button-text-dark: #141418;
+  --graph-card-background: #202027;
 }
 
 * {
-  border: 0.1px pink solid;
+  /* border: 0.1px rgb(255, 255, 255) solid; */
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: white;
 }
+
+body,
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  border-left: 1px var(--border-gray) solid;
+  border-right: 1px var(--border-gray) solid;
+}
+
+body {
+  position: relative;
+}
+
+.developedByJames {
+  position: absolute;
+  color: #9a98a1;
+  bottom: 0;
+  left: 0;
+  font-weight: 100;
+  font-size: 12px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+.developedByJames--link {
+  text-decoration: none;
+}
+
+body {
+  max-width: 1500px;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  /* TODO fixedWidth for full screen container */
+  max-width: 1300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headingText {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.headingText--large {
+  margin: 35px 0px 16px 0px;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.subText--large {
+  font-size: 16px;
+  font-weight: 400;
+  color: #9a98a1;
+}
+
+.subText {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.bodyText {
+  font-size: 14px;
+  font-weight: 600;
+}
+.bodyText--accentPurple {
+  color: var(--accent-purple);
+  cursor: pointer;
+}
+
+.buttonText {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.numbersText {
+  font-size: 32px;
+}
+
+.labelAndInputText {
+  font-size: 14px;
+  color: var(--inputAndLabel-text-color);
+}
+
+.loginSectionContainer {
+  /* TODO fixedWidth */
+  width: 622px;
+  min-width: 300px;
+  height: fit-content;
+  /* padding: 40px 80px; */
+  padding: 40px 60px;
+}
+
+.heroSectionContainer {
+  /* background-color: var(--heroSection-background-color); */
+  background-color: #17181c;
+  border: 1px var(--border-gray) solid;
+  width: 818px;
+  /* TODO fixedWidth */
+  height: 850px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.loginSection__svgContainer {
+  display: flex;
+}
+
+.loginSection__loginFormContainer {
+  display: flex;
+  flex-direction: column;
+  /* TODO delete border */
+  /* border: 0.1px green solid; */
+  justify-content: center;
+  align-items: center;
+  margin-top: 88px;
+}
+
+.loginSection__loginTitleContainer {
+  /* TODO delete border */
+  /* border: 0.1px orange solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginSection__loginWithGoogleButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0px;
+  background-color: var(--accent-gray);
+  border: 1px var(--border-gray) solid;
+  border-radius: 12px;
+  margin: 20px 0px;
+  cursor: pointer;
+}
+
+.loginSection__svgContainer--profileImage {
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accent-gray);
+  border: 1px var(--border-gray) solid;
+  border-radius: 12px;
+  margin-bottom: 18px;
+}
+
+.loginSection__svgContainer--profileImage svg {
+}
+
+.loginSection__loginInputFieldsContainer {
+  /* border: 0.1px purple solid; */
+  width: 100%;
+  margin: 20px 0px 0px 0px;
+  display: flex;
+}
+
+.loginSection__loginInputFieldsContainer form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loginSection__fieldGroupContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.loginSection__fieldGroupContainer input {
+  height: 52px;
+  background-color: var(--accent-gray);
+  border: 1px var(--border-gray) solid;
+  border-radius: 6px;
+  color: #f2eef9;
+  margin-top: 8px;
+  padding: 0px 16px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.loginSection__fieldGroupContainer label {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.loginSection__passwordContainer {
+  position: relative;
+  width: 100%;
+}
+
+.loginSection__passwordContainer input {
+  width: 100%;
+}
+
+.toggleVisibilityPassword {
+  position: absolute;
+  top: 60%;
+  right: 1rem;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.loginSection__submitButton {
+  background-color: var(--accent-purple);
+
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  margin: 10px 0px 20px 0px;
+  cursor: pointer;
+}
+
+.loginSection__submitButton span {
+  color: var(--button-text-dark);
+}
+
+.loginSection__accountAlreadyText {
+  align-self: center;
+  font-weight: 200;
+}
+
+.loginSection__orText {
+  margin: 5px 0px;
+}
+
+.heroSection__upperRelativeContainer {
+  /* background-color: #ff3232; */
+  /* TODO remove fixedWidth */
+  height: 630px;
+  border-radius: 24px;
+  position: relative;
+  padding: 20px 0px 0px 0px;
+  width: 100%;
+}
+
+.heroSection__upperRelativeContainer img {
+  width: 100%;
+  height: 99%;
+  /* position: relative; */
+  /* TODO Adjust Opacity */
+  opacity: 20%;
+}
+
+.heroSection__tipCard {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  flex-direction: column;
+  background-color: #876ce1;
+  background: linear-gradient(180deg, #9679eb 0%, #4a38ae 100%);
+  height: 374px;
+  width: 316px;
+  padding: 38px 20px 20px 20px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.loginSection__submitButton {
+  z-index: 99;
+}
+
+.heroSection__blobTopRight {
+  position: absolute;
+  background-image: url("/public/tip-card-blob-top-left.svg");
+  width: 200px;
+  height: 200px;
+  top: 0%;
+  left: 0%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.heroSection__tipCard::after {
+  content: "";
+  position: absolute;
+  background-image: url("/public/tip-card-blob-bottom-left.svg");
+  width: 200px;
+  height: 200px;
+  bottom: -20%;
+  left: -20%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.heroSection__tipCard::before {
+  content: "";
+  position: absolute;
+  background-image: url("/public/tip-card-blob-bottom-right.svg");
+  width: 200px;
+  height: 200px;
+  bottom: 0%;
+  right: 0%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.her .heroSection__tipCard > .buttonText {
+  margin: 12px 0px 8px;
+}
+
+.loginSection__submitButton {
+  margin-top: auto;
+  border: 1px #bdb2f8 solid;
+}
+
+.loginSection__submitButton--loginCard {
+  margin-top: 10px;
+}
+
+.bodyText--tipCard {
+  margin-top: 8px;
+  font-weight: 200;
+  color: #d8d0f1;
+  line-height: 20px;
+}
+
+.buttonText--tipCardHeading {
+  font-weight: 500;
+  color: #d8d0f1;
+  line-height: 24px;
+}
+
+.headingText--tipCard {
+  margin-bottom: 12px;
+  font-weight: 500;
+  color: #e0d7f5;
+  line-height: 24px;
+}
+
+.loginSection__submitButton--tipCard {
+  margin-bottom: 0px;
+  background: linear-gradient(90deg, #c0b7f9 0%, #a595f8 100%);
+  border: 1px #cfc6f9 solid;
+}
+
+.heroSection__gradientOrb {
+  position: absolute;
+
+  right: 4px;
+  top: 208px;
+}
+.heroSection__graphCard {
+  background-color: var(--graph-card-background);
+  width: 388px;
+  height: 96px;
+  border-radius: 8px;
+  border: 1px #282830 solid;
+  position: absolute;
+  top: 58px;
+  right: 142px;
+  display: flex;
+  padding: 16px 14px;
+}
+
+.heroSection__graphCard--purple {
+  top: 178px;
+  right: 19px;
+}
+
+.heroSection__graphCard--green {
+  top: 456px;
+  right: 12px;
+}
+
+.heroSection__dataDisplayContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 44%;
+}
+.heroSection__graphCard svg {
+  width: 100%;
+  position: relative;
+  left: 10px;
+}
+
+.heroSection__dataDisplayContainer > .headingText,
+.heroSection__dataCard > .headingText {
+  margin-bottom: 8px;
+  color: #c7c5cf;
+  font-size: 32px;
+}
+.heroSection__dataDisplayContainer > .subText,
+.heroSection__dataCard > .subText {
+  color: #9c9aa3;
+  font-size: 12px;
+}
+
+.heroSection__dataCard {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--graph-card-background);
+  border: 1px #282830 solid;
+  position: absolute;
+  height: 96px;
+  width: 125px;
+  justify-content: center;
+  align-items: start;
+  border-radius: 8px;
+  padding: 17px 16px;
+  top: 0;
+  left: 299px;
+  top: 298px;
+}
+
+.heroSection__dataCard--averageWin {
+  left: 438px;
+  top: 336px;
+}
+
+/* TODO Need to wrap this in a div instead of using relative position */
+.subText svg {
+  display: flex;
+  width: 10px;
+  position: relative;
+  left: 80px;
+  bottom: 11px;
+}
+
+.heroSection__paginationContainer {
+  margin-top: 36px;
+  display: flex;
+  gap: 12px;
+}
+
+.heroSection__paginationDot {
+  background-color: #434348;
+  height: 12px;
+  width: 12px;
+  border-radius: 100%;
+}
+
+.heroSection__paginationDot--active {
+  background-color: #f3eef9;
+}
+
+.heroSectionContainer--page1 {
+  border: 1px green solid;
+}
+
+.heroSection__tipCard--dark {
+  background: none;
+  background-color: var(--graph-card-background);
+  border: 0.1px red solid;
+  width: 316px;
+  height: 216px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  position: absolute;
+  left: 82px;
+  top: 218px;
+}
+
+.headingText--tipCardDark {
+  padding-top: 0px;
+}
+.heroSection__tipCard--dark::before {
+  display: none;
+}
+
+/* TODO One of the blobs on the tip card is missing? Check it. */
+/* @media screen and (max-width: 1350px) {
+  .heroSectionContainer {
+    display: none;
+  }
+}
+@media screen and (max-width: 590px) {
+  .loginSectionContainer {
+    padding: 40px 20px;
+  }
+} */
