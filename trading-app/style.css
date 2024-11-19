@@ -490,7 +490,7 @@ main {
 .heroSection__tipCard--dark {
   background: none;
   background-color: var(--graph-card-background);
-  border: 0.1px red solid;
+
   width: 316px;
   height: 216px;
   display: flex;
@@ -508,8 +508,195 @@ main {
   display: none;
 }
 
+.heroSection__graphCard--profitFactor {
+  top: 169px;
+  right: 170px;
+  width: 183px;
+}
+.heroSection__graphCard--winRate {
+  top: 277px;
+  right: 47px;
+  width: 183px;
+  z-index: 2;
+}
+
+.heroSection__dataDisplayContainer--profitFactor {
+  width: 60%;
+}
+
+.heroSection__ellipseSvg {
+  position: relative;
+  top: -5px;
+}
+
+.heroSection__graphCard--large {
+  top: 358px;
+  right: 71px;
+
+  flex-direction: column;
+  height: 276px;
+  width: 587px;
+  display: flex;
+  gap: 30px;
+  z-index: 1;
+}
+
+.subText--graphLarge {
+  color: #c6c3cd;
+  font-size: 16px;
+}
+
+.heroSection__graphCard--page2 {
+  left: 341px;
+}
+
+.heroSectionContainer--page3 {
+}
+
+.heroSection__upperRelativeContainer {
+}
+
+.heroSection__calendarCard {
+  position: absolute;
+  top: 335px;
+  right: 18px;
+  background-color: var(--graph-card-background);
+  background-color: rgba(
+    32,
+    32,
+    32,
+    0.6
+  ); /* Set background color with opacity */
+  backdrop-filter: blur(10px); /* Apply Gaussian blur to the background */
+  -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
+  width: 682px;
+  height: 285px;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+/* Gradient overlay */
+.heroSection__calendarCard::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1) 0%,
+    /* Full black starts at 10% */ rgba(0, 0, 0, 0.5) 10%,
+    /* Semi-transparent black */ rgba(0, 0, 0, 0) 20% /* Transparent by 50% */
+  );
+  z-index: 2;
+  pointer-events: none; /* Ensures the overlay doesn't block interactions with the SVG */
+}
+.heroSection__calendarCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1) 0%,
+    /* Full black starts at 10% */ rgba(0, 0, 0, 0.5) 5%,
+    /* Semi-transparent black */ rgba(0, 0, 0, 0) 20% /* Transparent by 50% */
+  );
+  z-index: 2;
+  pointer-events: none; /* Ensures the overlay doesn't block interactions with the SVG */
+}
+
+.heroSection__calendarSvgContainer {
+  position: absolute;
+  right: 30px;
+  top: 70px;
+}
+
+.heroSection__headingText--Calendar {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.heroSection__headingText--Calendar {
+  font-weight: 400;
+}
+
+.heroSection__headingText--Grey {
+  color: #929098;
+}
+
+.heroSection__badgeCard {
+  background-color: var(--graph-card-background);
+  height: 178px;
+  width: 152px;
+
+  position: absolute;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px var(--border-gray) solid;
+}
+
+.heroSection__badgeCard > svg {
+  margin-bottom: 15px;
+}
+
+.heroSection__badgeCard > span {
+  width: 80px;
+  text-align: center;
+  color: #c5c2cc;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.heroSection__badgeCard--winRate {
+  top: 100px;
+  left: 62px;
+}
+
+.heroSection__badgeCard--profMonths12 {
+  top: 17px;
+  left: 240px;
+}
+
+.heroSection__badgeCard--profMonths1 {
+  top: 227px;
+  left: 240px;
+}
+
+.heroSection__badgeCard--return {
+  top: 98px;
+  right: 246px;
+}
+
+.subText--Return {
+  width: 127px !important;
+}
+
+.heroSection__badgeCard--tradingStyle {
+  right: 74px;
+  top: 130px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* .heroSection__largeGraphSvg {
+  position: relative;
+  top: 5px;
+} */
+
 /* TODO One of the blobs on the tip card is missing? Check it. */
-/* @media screen and (max-width: 1350px) {
+@media screen and (max-width: 1350px) {
   .heroSectionContainer {
     display: none;
   }
@@ -518,4 +705,4 @@ main {
   .loginSectionContainer {
     padding: 40px 20px;
   }
-} */
+}
