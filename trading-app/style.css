@@ -6,7 +6,8 @@
   background-color: #131418;
   --heroSection-background-color: #18181c;
   --accent-gray: #18181c;
-  --border-gray: #36363a;
+  /* --border-gray: #36363a; */
+  --border-gray: #2b2b2e;
   --accent-purple: #a99af8;
   --light-button-purple: #ab9ef8;
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -125,9 +126,11 @@ main {
   /* background-color: var(--heroSection-background-color); */
   background-color: #17181c;
   border: 1px var(--border-gray) solid;
-  width: 818px;
+  /* width: 818px; */
+  width: 1143px;
   /* TODO fixedWidth */
   height: 850px;
+
   border-radius: 24px;
   display: flex;
   flex-direction: column;
@@ -142,16 +145,13 @@ main {
 .loginSection__loginFormContainer {
   display: flex;
   flex-direction: column;
-  /* TODO delete border */
-  /* border: 0.1px green solid; */
+
   justify-content: center;
   align-items: center;
   margin-top: 88px;
 }
 
 .loginSection__loginTitleContainer {
-  /* TODO delete border */
-  /* border: 0.1px orange solid; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -448,12 +448,12 @@ main {
   border-radius: 8px;
   padding: 17px 16px;
   top: 0;
-  left: 299px;
+  left: 338px;
   top: 298px;
 }
 
 .heroSection__dataCard--averageWin {
-  left: 438px;
+  left: 479px;
   top: 336px;
 }
 
@@ -477,6 +477,7 @@ main {
   height: 12px;
   width: 12px;
   border-radius: 100%;
+  cursor: pointer;
 }
 
 .heroSection__paginationDot--active {
@@ -484,7 +485,7 @@ main {
 }
 
 .heroSectionContainer--page1 {
-  border: 1px green solid;
+  /* border: 1px green solid; */
 }
 
 .heroSection__tipCard--dark {
@@ -559,7 +560,7 @@ main {
 .heroSection__calendarCard {
   position: absolute;
   top: 335px;
-  right: 18px;
+  right: 82px;
   background-color: var(--graph-card-background);
   background-color: rgba(
     32,
@@ -574,6 +575,7 @@ main {
   border-radius: 10px;
   overflow: hidden;
   z-index: 2;
+  border: 1px var(--graph-card-background) solid;
 }
 
 /* Gradient overlay */
@@ -586,9 +588,9 @@ main {
   height: 100%;
   background: linear-gradient(
     to top,
-    rgba(0, 0, 0, 1) 0%,
-    /* Full black starts at 10% */ rgba(0, 0, 0, 0.5) 10%,
-    /* Semi-transparent black */ rgba(0, 0, 0, 0) 20% /* Transparent by 50% */
+    #17181c 0%,
+    #26253020 3%,
+    rgba(255, 255, 255, 0) 20%
   );
   z-index: 2;
   pointer-events: none; /* Ensures the overlay doesn't block interactions with the SVG */
@@ -602,9 +604,9 @@ main {
   height: 100%;
   background: linear-gradient(
     to right,
-    rgba(0, 0, 0, 1) 0%,
-    /* Full black starts at 10% */ rgba(0, 0, 0, 0.5) 5%,
-    /* Semi-transparent black */ rgba(0, 0, 0, 0) 20% /* Transparent by 50% */
+    #17181c 0%,
+    #26253020 3%,
+    rgba(255, 255, 255, 0) 20%
   );
   z-index: 2;
   pointer-events: none; /* Ensures the overlay doesn't block interactions with the SVG */
@@ -705,4 +707,9 @@ main {
   .loginSectionContainer {
     padding: 40px 20px;
   }
+}
+
+.gridLines {
+  height: inherit;
+  opacity: 50%;
 }
