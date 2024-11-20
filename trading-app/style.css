@@ -129,12 +129,13 @@ main {
   /* width: 818px; */
   width: 1143px;
   /* TODO fixedWidth */
-  height: 850px;
+  /* height: 850px; */
+  height: 90vh;
 
   border-radius: 24px;
   display: flex;
   flex-direction: column;
-
+  justify-content: start;
   align-items: center;
 }
 
@@ -706,6 +707,11 @@ main {
 @media screen and (max-width: 590px) {
   .loginSectionContainer {
     padding: 40px 20px;
+  }
+}
+@media screen and (max-height: 900px) {
+  .heroSectionContainer {
+    height: 98vh;
   }
 }
 
