@@ -14,7 +14,7 @@ const Navbar = () => {
         {/* <div className=" flex flex-col sm:-ml-20  mt-2"> */}
         <div className=" flex flex-col  md:-ml-6 mt-2">
           <h1 className="font-bold italic uppercase box-shadow-lg text-2xl -mt-2">
-            Prime``
+            Prime
           </h1>
           <span className="box-shadow-lg -mt-2 font-thin text-lg">Leads</span>
         </div>
