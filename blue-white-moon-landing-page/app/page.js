@@ -9,7 +9,7 @@ export default function Home() {
       <BackgroundSemiCircleWithAnimations />
       <div className="flex flex-col justify-center items-center mb-auto overflow-hidden ">
         <img
-          src="dollar-lonely.png"
+          src="dollar-lonely.webp"
           className="custom-shadow relative h-[400px] w-[400px] top-[112px]"
         />
         <h1 className="sm:text-5xl text-3xl max-w-[600px] w-[80vw] text-center font-semibold sm:leading-[51px] leading-[30px] tracking-normal text-stroke text-stroke drop-shadow-lg">
@@ -28,7 +28,7 @@ export default function Home() {
             additionalSytles="px-6 py-[20px] cursor-pointer"
           />
           <div className="flex justify-center items-center gap-2 box-shadow-xl cursor-pointer z-50">
-            <img src="play-button.svg" className="w-[30px]" />
+            <img src="play-button.svg" className="w-[30px] h-[30px]" />
             <span>How to start</span>
           </div>
         </div>

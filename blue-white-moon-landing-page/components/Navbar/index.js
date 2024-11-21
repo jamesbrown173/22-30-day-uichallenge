@@ -25,7 +25,11 @@ const Navbar = () => {
 
       {/* --- Right Items --- */}
       <div className="smCustom:flex justify-center items-center gap-2 hidden pr-4">
-        <img src="language-button.svg" className="h-8 ml-6" />
+        <img
+          src="language-button.svg"
+          className="h-8 ml-6"
+          alt="language-icon"
+        />
 
         <DarkButton innerText="Sign In" />
 

@@ -151,7 +151,11 @@ const MenuBar = () => {
             />
           </div>
         </div>
-        <img src="/menu-burger.svg" alt="Menu" className="z-10 relative" />
+        <img
+          src="/menu-burger.svg"
+          alt="Menu"
+          className="z-10 relative size-6"
+        />
       </div>
     </div>
   );
