@@ -116,7 +116,8 @@ h2 {
   z-index: 99;
 }
 
-button {
+.main__button,
+.navbar__button {
   background-color: #1b2536;
   color: white;
   padding: 12px 22px;
