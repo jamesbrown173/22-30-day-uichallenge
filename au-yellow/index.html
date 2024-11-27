@@ -325,53 +325,43 @@
       </div>
       <div class="conact-us__form-container-right">
         <h1>Book a Call with Us</h1>
-        <p>Our friendly team would love to hear from you.</p>
-        <form>
-          <label for="first-name">First name</label>
-          <input
-            type="text"
-            id="first-name"
-            placeholder="First name"
-            required
-          />
+        <span>Our friendly team would love to hear from you.</span>
 
-          <label for="last-name">Last name</label>
-          <input type="text" id="last-name" placeholder="Last name" required />
-
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            placeholder="you@company.com"
-            required
-          />
-
-          <label for="details"
-            >Tell us a bit about your company and current needs
-            <span class="optional">(optional)</span></label
-          >
-          <textarea
-            id="details"
-            placeholder="Something about your company here"
-          ></textarea>
-
-          <label for="budget">What is your monthly budget?</label>
-          <input
-            type="range"
-            id="budget"
-            min="1000"
-            max="10000"
-            step="1000"
-            value="5000"
-            oninput="updateBudget(this.value)"
-          />
-          <div class="slider-label">
-            <span>$1000</span>
-            <span id="budget-value">$5000</span>
-            <span>$10,000</span>
+        <form action="">
+          <div class="form__first-name-last-name">
+            <div class="form__first-name">
+              <label for="first-name">First name</label>
+              <input type="text" placeholder="Fist name" />
+            </div>
+            <div class="form__last-name">
+              <label for="first-name">Last name</label>
+              <input type="text" placeholder="Last name" />
+            </div>
           </div>
-
-          <button type="submit" class="submit-btn">Send message</button>
+          <div class="form__email">
+            <label for="email">Email</label>
+            <input
+              type="text"
+              name="email"
+              id=""
+              placeholder="you@company.com"
+            />
+          </div>
+          <div class="form__tell-us-about">
+            <label for="tell-us-about"
+              >Tell us a bit about your company and current needs</label
+            >
+            <textarea name="tell-us-about" id=""> </textarea>
+          </div>
+          <div class="form__monthly-budget">
+            <label for="monthly-budget"
+              >Tell us a bit about your company and current needs
+            </label>
+            <input type="range" name="" id="" />
+          </div>
+          <button class="form__submit-button">
+            <span>Send message</span>
+          </button>
         </form>
       </div>
     </section>
