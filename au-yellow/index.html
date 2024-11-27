@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AU</title>
     <script type="module" src="/main.js"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <section class="hero">
@@ -37,16 +38,18 @@
     </section>
     <section class="who-we-are">
       <h3>WHO WE ARE</h3>
-      <div class="who-we-are__text-and-svg-container">
-        <img src="./public/who-we-are__bracket--left.svg" alt="" />
-        <!-- <div class="who-we-are__bracket--left">hi</div> -->
-        <p>
-          Aureus is a boutique Web3 agency and advisory, offering an unbeatable
-          edge in Web3. We handpick our protégés, ensuring dedicated investment
-          in their success. Our expertise lies in brand building through
-          gamification, making us your key to excelling in the Web3 space.
-        </p>
-        <img src="./public/who-we-are__bracket--right.svg" alt="" />
+      <div class="border-wrapper">
+        <div class="who-we-are__text-anim-container">
+          <div class="who-we-are__text-and-svg-container">
+            <p>
+              Aureus is a boutique Web3 agency and advisory, offering an
+              unbeatable edge in Web3. We handpick our protégés, ensuring
+              dedicated investment in their success. Our expertise lies in brand
+              building through gamification, making us your key to excelling in
+              the Web3 space.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
     <section class="why-us">
@@ -325,7 +328,9 @@
       </div>
       <div class="conact-us__form-container-right">
         <h1>Book a Call with Us</h1>
-        <span>Our friendly team would love to hear from you.</span>
+        <span class="contact-us__heading-subtext"
+          >Our friendly team would love to hear from you.</span
+        >
 
         <form action="">
           <div class="form__first-name-last-name">
@@ -351,13 +356,34 @@
             <label for="tell-us-about"
               >Tell us a bit about your company and current needs</label
             >
-            <textarea name="tell-us-about" id=""> </textarea>
+            <textarea
+              name="tell-us-about"
+              id=""
+              placeholder="Something about your company here"
+            ></textarea>
           </div>
           <div class="form__monthly-budget">
-            <label for="monthly-budget"
-              >Tell us a bit about your company and current needs
-            </label>
-            <input type="range" name="" id="" />
+            <label for="monthly-budget">What is your monthly budget? </label>
+            <div class="form__slider">
+              <div class="ball"></div>
+              <div class="line"></div>
+              <div class="ball"></div>
+              <div class="line"></div>
+              <div class="ball"></div>
+              <div class="line"></div>
+              <div class="ball"></div>
+              <div class="line"></div>
+              <div class="ball"></div>
+              <div class="line"></div>
+              <div class="ball"></div>
+              <div class="line"></div>
+              <div class="ball"></div>
+            </div>
+            <div class="form__slider-labels">
+              <span>$1000</span>
+              <span>$5,000</span>
+              <span>$10,000</span>
+            </div>
           </div>
           <button class="form__submit-button">
             <span>Send message</span>
@@ -366,6 +392,7 @@
       </div>
     </section>
     <footer>
+      <img src="/public/full-logo.svg" alt="" />
       <div>
         <span>Who we are</span>
         <span>Why us</span>
