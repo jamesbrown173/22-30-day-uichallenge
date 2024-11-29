@@ -3,6 +3,10 @@ import Lenis from "lenis";
 const sliderCircles = document.querySelectorAll(".ball");
 const sliderTexts = document.querySelectorAll(".form__slider-labels span");
 
+// Default Slider State
+sliderTexts[1].style.color = "#e3c045";
+sliderCircles[3].style.backgroundColor = "#e3c045";
+
 // Initialize Lenis
 const lenis = new Lenis({
   autoRaf: true,

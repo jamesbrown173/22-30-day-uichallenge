@@ -1,9 +1,7 @@
 /* TODO 
 
 
-6. Add hover states for why-us cards
-7. Add custom border wrapper on our-promise
-8. Add custom borders on person card role
+
 9. Add default state to slider
 
 
@@ -77,7 +75,7 @@ span {
 *,
 *::after,
 *::before {
-  /* border: 0.1px rgba(232, 255, 26, 0.177) solid; */
+  /* border: 0.1px rgba(255, 26, 26, 0.474) solid; */
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -261,13 +259,53 @@ h3 {
   }
 }
 
+.border-wrapper-dark {
+  position: relative;
+  border-left: 1px #e2c044 solid !important;
+  /* border-right: 1px #e2c044 solid !important; */
+
+  span {
+    padding: 0px 10px;
+  }
+}
+
+.border-wrapper-dark:hover {
+  border-left: 1px var(--aureus-black) solid !important;
+  border-right: 1px var(--aureus-black) solid !important;
+  /* transition: all 1.5s ease-in-out !important; */
+
+  ::after {
+    content: "";
+    width: 10px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    border-top: 1px var(--aureus-black) solid;
+    border-bottom: 1px var(--aureus-black) solid;
+  }
+
+  ::before {
+    content: "";
+    width: 10px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    border-top: 1px var(--aureus-black) solid;
+    border-bottom: 1px var(--aureus-black) solid;
+  }
+}
+
 .border-wrapper {
-  border-left: 1px #e2c044 solid;
-  border-right: 1px #e2c044 solid;
+  position: relative;
+  border-left: 1px #e2c044 solid !important;
+  border-right: 1px #e2c044 solid !important;
 
   ::after {
     content: "";
 
+    height: 10px;
     width: 20px;
     position: absolute;
     left: 0px;
@@ -286,6 +324,36 @@ h3 {
     height: 100%;
     border-top: 1px #e2c044 solid;
     border-bottom: 1px #e2c044 solid;
+  }
+}
+
+.border-wrapper-light {
+  position: relative;
+  border-left: 1px #2c2c2c solid !important;
+  border-right: 1px #2c2c2c solid !important;
+
+  ::after {
+    content: "";
+
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    border-top: 1px #2c2c2c solid;
+    border-bottom: 1px #2c2c2c solid;
+  }
+
+  ::before {
+    content: "";
+    width: 10px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    border-top: 1px #2c2c2c solid;
+    border-bottom: 1px #2c2c2c solid;
   }
 }
 
@@ -336,7 +404,7 @@ h3 {
   .why-us__reason-card-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 16px; /* Optional: Add spacing between grid items */
+    /* gap: 16px; Optional: Add spacing between grid items */
     width: 100%;
     color: var(--aureus-black);
     font-size: 32px;
@@ -364,6 +432,7 @@ h3 {
 }
 
 .why-us__reason-card {
+  position: relative;
   display: flex;
   /* height: 330px; */
   height: 228px;
@@ -515,6 +584,50 @@ h3 {
   }
 }
 
+.our-promise__grids-wrapper {
+  position: relative;
+  padding: 0px 0px 110px 0px;
+}
+
+.corner-border-y {
+  /* background-color: red; */
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  left: 0;
+
+  border-left: 2px var(--aureus-gold) solid !important;
+  border-right: 2px var(--aureus-gold) solid !important;
+}
+
+.upper {
+  top: 0;
+}
+
+.lower {
+  bottom: 0;
+}
+
+.left {
+  left: 0;
+  top: 0;
+}
+
+.right {
+  top: 0;
+  right: 0;
+}
+
+.corner-border-x {
+  /* background-color: rgba(8, 246, 59, 0.858); */
+  width: 20px;
+  height: 100%;
+  position: absolute;
+
+  border-bottom: 2px var(--aureus-gold) solid !important;
+  border-top: 2px var(--aureus-gold) solid !important;
+}
+
 .our-promise {
   display: flex;
   flex-direction: column;
@@ -651,13 +764,13 @@ h3 {
     }
 
     .the-leadership__persons-role {
-      margin-top: auto;
-      border-left: 1px rgba(255, 255, 255, 0.124) solid;
-      border-right: 1px rgba(255, 255, 255, 0.124) solid;
-      margin: auto 20px 0px 20px;
       padding: 10px 23px;
       margin-bottom: 10px;
     }
+  }
+
+  .border-wrapper-light {
+    margin-top: auto;
   }
   h3 {
     color: #e3c045;
@@ -1296,7 +1409,8 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr) !important;
     grid-template-rows: repeat(2, 1fr) !important;
-    gap: 16px; /* Optional: Add spacing between grid items */
+    grid-row-gap: 20px; /* Adds a gap between the rows */
+
     width: 100%;
   }
 
@@ -1431,7 +1545,7 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    gap: 16px; /* Optional: Add spacing between grid items */
+    /* gap: 16px;  */
     width: 100%;
   }
 
