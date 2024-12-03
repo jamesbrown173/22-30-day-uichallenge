@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "framer-motion": "^11.11.13",
+    "gsap": "^3.12.5",
     "next": "15.0.3",
     "react": "18.2.0",
     "react-dom": "18.2.0"
