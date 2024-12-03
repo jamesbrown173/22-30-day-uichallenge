@@ -18,37 +18,38 @@ gsap.ticker.add((time) => {
 });
 
 // Create a timeline for hero animations
-const heroTimeline = gsap.timeline();
+const heroTimeline = gsap.timeline({
+  defaults: {
+    duration: 0.8,
+    ease: "power2.out",
+  },
+});
 
-heroTimeline
-  .from(".hero__logo-container", {
-    y: -100,
-    opacity: 0,
-    duration: 1,
-    ease: "power3.out",
-  })
-  .from(
-    ".hero__links-container span",
-    {
+// Wait for document load
+window.addEventListener("load", () => {
+  heroTimeline
+    .from(".hero__logo-container", {
       y: -50,
       opacity: 0,
-      duration: 0.8,
-      stagger: 0.1,
-      ease: "power2.out",
-    },
-    "-=0.5"
-  ) // Overlap with previous animation
-  .from(
-    ".hero__heading-text-and-paragraph-container h1",
-    {
-      y: 100,
-      x: 0,
-      opacity: 0,
-      duration: 1,
-      ease: "power3.out",
-    },
-    "-=0.5"
-  );
+    })
+    .from(
+      ".hero__links-container span",
+      {
+        y: -30,
+        opacity: 0,
+        stagger: 0.1,
+      },
+      "-=0.3"
+    )
+    .from(
+      ".hero__heading-text-and-paragraph-container h1",
+      {
+        y: 50,
+        opacity: 0,
+      },
+      "-=0.3"
+    );
+});
 
 // Why us section animations
 gsap.from(".why-us h3", {

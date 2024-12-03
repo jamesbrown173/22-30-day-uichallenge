@@ -9,12 +9,38 @@
     <title>AU</title>
     <script type="module" src="/main.js"></script>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="preload"
+      as="image"
+      href="/public/hero-bg.webp"
+      type="image/webp"
+    />
+    <link
+      rel="preload"
+      href="/Helvetica-Bold-Font.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/Roobert-Light.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
   </head>
   <body>
     <section class="hero">
       <header class="hero__header">
         <div class="hero__logo-container">
-          <img src="/public/au-logo.svg" alt="AU-logo" />
+          <img
+            src="/public/au-logo.svg"
+            alt="AU-logo"
+            width="40"
+            height="40"
+            loading="eager"
+          />
           <span id="hero__main-logo-text">THE ELEMENT OF WEB3</span>
         </div>
         <div class="hero__links-container">
@@ -106,11 +132,16 @@
         <div class="our-services__card">
           <h4>Creating your brand’s cult following</h4>
           <div class="our-services__card-image-container">
-            <img
-              class="our-services__crown-image"
-              src="./public/crown.png"
-              alt=""
-            />
+            <picture>
+              <source srcset="/assets/crown.webp" type="image/webp" />
+              <img
+                class="our-services__crown-image"
+                src="/assets/crown.png"
+                alt="Crown icon"
+                width="552"
+                height="552"
+              />
+            </picture>
           </div>
           <span>Impactful advisory & wisdom</span>
           <span>Digital Marketing</span>
