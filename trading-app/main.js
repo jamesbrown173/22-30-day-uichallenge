@@ -12,6 +12,8 @@ const heroHeading = document.getElementById("heroSectionHeading");
 const heroSubText = document.getElementById("heroSubText");
 
 let currentPage = 2; // Start at page 2 by default
+let autoplayInterval;
+const AUTOPLAY_DELAY = 5000; // 5 seconds between transitions
 
 // Function to handle showing a page
 function showPage(pageNumber) {
@@ -28,11 +30,45 @@ function showPage(pageNumber) {
     heroSubText.innerText =
       "Get personalised tips and insights to improve your trading";
 
-    gsap.from(page1, {
-      y: 5,
+    // Create timeline for page 1 animations
+    const tl = gsap.timeline();
+
+    tl.from(page1, {
+      y: 40,
       opacity: 0,
       duration: 0.5,
-    });
+      ease: "power2.out",
+    })
+      .from(
+        ".heroSection__graphCard--profitFactor",
+        {
+          y: 40,
+          opacity: 0,
+          duration: 0.4,
+          ease: "power2.out",
+        },
+        "-=0.3"
+      )
+      .from(
+        ".heroSection__graphCard--winRate",
+        {
+          y: 40,
+          opacity: 0,
+          duration: 0.4,
+          ease: "power2.out",
+        },
+        "-=0.2"
+      )
+      .from(
+        ".heroSection__graphCard--large",
+        {
+          y: 40,
+          opacity: 0,
+          duration: 0.5,
+          ease: "power2.out",
+        },
+        "-=0.2"
+      );
   } else if (pageNumber === 2) {
     page1.classList.add("hidden");
     page2.classList.remove("hidden");
@@ -45,11 +81,47 @@ function showPage(pageNumber) {
     heroHeading.innerText = "Unlock the Market's Secrets";
     heroSubText.innerText = "Track how market indicators affect your stats.";
 
-    gsap.from(page2, {
-      y: 5,
+    // Create timeline for page 2 animations
+    const tl = gsap.timeline();
+
+    tl.from(page2, {
+      y: 40,
       opacity: 0,
       duration: 0.5,
-    });
+      ease: "power2.out",
+    })
+      .from(
+        ".heroSection__tipCard",
+        {
+          y: 40,
+          opacity: 0,
+          duration: 0.5,
+          ease: "power2.out",
+        },
+        "-=0.3"
+      )
+      .from(
+        ".heroSection__graphCard--purple, .heroSection__graphCard--green",
+        {
+          y: 40,
+          opacity: 0,
+          stagger: 0.2,
+          duration: 0.4,
+          ease: "power2.out",
+        },
+        "-=0.3"
+      )
+      .from(
+        ".heroSection__dataCard",
+        {
+          y: 40,
+          opacity: 0,
+          stagger: 0.15,
+          duration: 0.4,
+          ease: "power2.out",
+        },
+        "-=0.2"
+      );
   } else if (pageNumber === 3) {
     page1.classList.add("hidden");
     page2.classList.add("hidden");
@@ -63,35 +135,68 @@ function showPage(pageNumber) {
     heroSubText.innerText =
       "Let your followers know about your trading journey and insights!";
 
-    gsap.from(page3, {
-      y: 5,
+    // Create timeline for page 3 animations
+    const tl = gsap.timeline();
+
+    tl.from(page3, {
+      y: 40,
       opacity: 0,
       duration: 0.5,
-    });
+      ease: "power2.out",
+    })
+      .from(
+        ".heroSection__calendarCard",
+        {
+          y: 40,
+          opacity: 0,
+          duration: 0.5,
+          ease: "power2.out",
+        },
+        "-=0.3"
+      )
+      .from(
+        ".heroSection__badgeCard",
+        {
+          y: 40,
+          opacity: 0,
+          stagger: 0.1,
+          duration: 0.4,
+          ease: "power2.out",
+        },
+        "-=0.2"
+      );
   }
+}
+
+function startAutoplay() {
+  // Clear any existing interval first
+  clearInterval(autoplayInterval);
+
+  // Start a new interval
+  autoplayInterval = setInterval(() => {
+    currentPage = currentPage >= 3 ? 1 : currentPage + 1;
+    showPage(currentPage);
+  }, AUTOPLAY_DELAY);
 }
 
 // Add click event listeners
 page1Selector.addEventListener("click", () => {
   currentPage = 1;
   showPage(1);
+  startAutoplay(); // Restart the timer
 });
 
 page2Selector.addEventListener("click", () => {
   currentPage = 2;
   showPage(2);
+  startAutoplay(); // Restart the timer
 });
 
 page3Selector.addEventListener("click", () => {
   currentPage = 3;
   showPage(3);
+  startAutoplay(); // Restart the timer
 });
 
-// Show the default page on load
-showPage(currentPage);
-
-// Auto-rotate logic
-setInterval(() => {
-  currentPage = (currentPage % 3) + 1; // Cycle through pages 1, 2, 3
-  showPage(currentPage);
-}, 5000); // Change every 5 seconds
+// Initial start of autoplay
+startAutoplay();
