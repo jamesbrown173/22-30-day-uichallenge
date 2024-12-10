@@ -19,37 +19,62 @@ gsap.ticker.add((time) => {
 
 // Create a timeline for hero animations
 const heroTimeline = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".hero",
+    start: "top 90%",
+    toggleActions: "play none none none",
+  },
   defaults: {
-    duration: 0.8,
+    duration: 0.6,
     ease: "power2.out",
   },
 });
 
 // Wait for document load
-window.addEventListener("load", () => {
-  heroTimeline
-    .from(".hero__logo-container", {
-      y: -50,
-      opacity: 0,
-    })
-    .from(
-      ".hero__links-container span",
-      {
-        y: -30,
-        opacity: 0,
-        stagger: 0.1,
-      },
-      "-=0.3"
-    )
-    .from(
-      ".hero__heading-text-and-paragraph-container h1",
-      {
-        y: 50,
-        opacity: 0,
-      },
-      "-=0.3"
-    );
-});
+// window.addEventListener("load", () => {
+//   heroTimeline
+//     .from(".hero__logo-container", {
+//       y: -50,
+//       opacity: 0,
+//     })
+//     .from(
+//       ".hero__links-container span",
+//       {
+//         y: -30,
+//         opacity: 0,
+//         stagger: 0.01,
+//       },
+//       "-=0"
+//     )
+//     .from(
+//       ".hero__heading-text-and-paragraph-container h1",
+//       {
+//         y: 50,
+//         opacity: 0,
+//       },
+//       "-=0"
+//     )
+//     .from(
+//       ".hero__heading-text-and-paragraph-container p",
+//       {
+//         y: 50,
+//         opacity: 0,
+//       },
+//       "-=1"
+//     )
+//     .from(
+//       ".hero__book-call-button",
+//       {
+//         y: 100,
+//         opacity: 0,
+//       },
+//       "-=1"
+//     )
+//     .to(".hero__book-call-button", {
+//       y: 0,
+//       opacity: 1,
+//     });
+// });
 
 // Why us section animations
 gsap.from(".why-us h3", {
